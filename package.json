@@ -1,0 +1,24 @@
+{
+  "name": "blogsite",
+  "version": "1.0.0",
+  "description": "Personal blog page.",
+  "main": "",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start index.js",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EcutDavid/EcutDavid.github.io.git"
+  },
+  "author": "David Guan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EcutDavid/EcutDavid.github.io/issues"
+  },
+  "homepage": "https://github.com/EcutDavid/EcutDavid.github.io#readme"
+}
