@@ -1,4 +1,4 @@
-var webpackCfg = require('./webpack.config');
+var webpackCfg = require('./webpack.config')
 
 module.exports = function(config) {
   config.set({
@@ -29,5 +29,5 @@ module.exports = function(config) {
         { type: 'text' }
       ]
     }
-  });
-};
+  })
+}
