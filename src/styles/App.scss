@@ -2,6 +2,7 @@
 body {
   color: #fff;
   background: #222;
+
 }
 
 .index img {
@@ -9,6 +10,7 @@ body {
   border-radius: 4px;
   background: #fff;
   display: block;
+  transition: 1s;          
 }
 
 .index .notice {
