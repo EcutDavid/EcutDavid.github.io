@@ -12,6 +12,12 @@ class Header extends Component {
           <p className='name'>David Guan</p>
           <p className='description'>Web developer</p>
         </div>
+        <div className='nav-bar'>
+          <span>ABOUT ME</span>
+          <span>BLOGS</span>
+          <span>PUBLIC SPEECH</span>
+          <span>CONTACT ME</span>
+        </div>
       </div>
     )
   }
