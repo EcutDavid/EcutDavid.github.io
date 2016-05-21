@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import { pageScrollTopAnimate } from 'html-utilities'
 
 import 'styles/Header.scss'
+import {
+  ABOUT_ME,
+  BLOGS,
+  PUBLIC_SPEECH,
+  CONTACT_ME
+} from 'constants/domID'
 
 class Header extends Component {
   constructor() {
@@ -29,6 +36,12 @@ class Header extends Component {
     style.display = style.display === 'block' ? 'none' : 'block'
   }
 
+  onLinkClick(id) {
+    const dom = document.querySelector(`#${id}`)
+    const scrollTimeMS = 500
+    pageScrollTopAnimate(dom.offsetTop, scrollTimeMS)
+  }
+
   render() {
     return (
       <div className="Header">
@@ -44,10 +57,10 @@ class Header extends Component {
             className='nav-menu-dropdown'
             ref='navMenuDropdown'
           >
-            <span>ABOUT ME</span>
-            <span>BLOGS</span>
-            <span>PUBLIC SPEECH</span>
-            <span>CONTACT ME</span>
+            <span onClick={this.onLinkClick.bind(this, ABOUT_ME)}>ABOUT ME</span>
+            <span onClick={this.onLinkClick.bind(this, BLOGS)}>BLOGS</span>
+            <span onClick={this.onLinkClick.bind(this, PUBLIC_SPEECH)}>PUBLIC SPEECH</span>
+            <span onClick={this.onLinkClick.bind(this, CONTACT_ME)}>CONTACT ME</span>
           </div>
         </div>
         <div className='avatar-area'>
@@ -56,10 +69,10 @@ class Header extends Component {
           <p className='description'>Web developer</p>
         </div>
         <div className='nav-bar'>
-          <span>ABOUT ME</span>
-          <span>BLOGS</span>
-          <span>PUBLIC SPEECH</span>
-          <span>CONTACT ME</span>
+          <span onClick={this.onLinkClick.bind(this, ABOUT_ME)}>ABOUT ME</span>
+          <span onClick={this.onLinkClick.bind(this, BLOGS)}>BLOGS</span>
+          <span onClick={this.onLinkClick.bind(this, PUBLIC_SPEECH)}>PUBLIC SPEECH</span>
+          <span onClick={this.onLinkClick.bind(this, CONTACT_ME)}>CONTACT ME</span>
         </div>
       </div>
     )

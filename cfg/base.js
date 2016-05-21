@@ -28,6 +28,10 @@ module.exports = {
     noInfo: false
   },
   resolve: {
+    modulesDirectories: [
+      'src',
+      'node_modules'
+    ],
     extensions: ['', '.js', '.jsx'],
     alias: {
       actions: `${defaultSettings.srcPath}/actions/`,
