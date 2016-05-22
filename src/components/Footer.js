@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { CONTACT_ME } from 'constants/domID'
 
-class Header extends Component {
+export default class Footer extends Component {
   render() {
     return (
       <div className="Footer" id={CONTACT_ME}>
@@ -14,8 +14,3 @@ class Header extends Component {
     )
   }
 }
-
-Header.defaultProps = {
-}
-
-export default Header
