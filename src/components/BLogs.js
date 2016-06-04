@@ -7,8 +7,8 @@ import 'styles/Blogs.scss'
 export default class Blogs extends Component {
   render() {
     return (
-      <div className='Blogs row' id={BLOGS}>
-        <div className='column small-11 small-centered'>
+      <div className='Blogs' id={BLOGS}>
+        <div className='row column small-11 small-centered'>
           <a
             className='column small-12 medium-6 container'
             target='_blank'

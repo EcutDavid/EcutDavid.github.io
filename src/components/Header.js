@@ -63,7 +63,7 @@ class Header extends Component {
         </div>
         <div className='avatar-area'>
           <figure className='avatar' />
-          <p className='name'>David Guan</p>
+          <h1 className='name'>David Guan</h1>
           <p className='description'>Web developer</p>
         </div>
         <div className='nav-bar'>
