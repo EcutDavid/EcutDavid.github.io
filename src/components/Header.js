@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { pageScrollTopAnimate } from 'html-utilities'
 
-import 'styles/Header.scss'
 import {
   ABOUT_ME,
   BLOGS,
   CONTACT_ME
 } from 'constants/domID'
+import 'styles/Header.scss'
 
 class Header extends Component {
   constructor() {
