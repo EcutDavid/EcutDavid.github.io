@@ -5,6 +5,8 @@ import 'styles/About.scss'
 import cncPic from '../assets/CNC.png'
 import wbPic from '../assets/WB.png'
 import dv20Pic from '../assets/20.png'
+import capmpPic from '../assets/BarCamp.png'
+import firstTalkPic from '../assets/FirstTalk.png'
 
 
 export default class About extends Component {
@@ -80,13 +82,19 @@ export default class About extends Component {
           </div>
           <h2 className='title'>Speeches</h2>
           <div className='row work-container speeches'>
-            <div className="column small-12 large-6">
-              <img className='img thumbnail'/>
+            <div className="column small-12 large-5">
+              <img className='img thumbnail' src={firstTalkPic}/>
+              <h5>React, webpack, and flux</h5>
+              <p>Sep 14, 2015</p>
+              <p>Talked about how to use React as View, Webpack as building tool, Flux as data management framework to spped up development.</p>
+              <p>Event link <a href='http://www.meetup.com/Shanghai-JavaScript/events/224553688/#past-event-description-wrap' target='_blank'>here</a>.</p>
             </div>
-            <div className="column small-12 large-6">
-              <img className='img thumbnail'></img>
-              <h5>CNC software</h5>
-              <p></p>
+            <div className="column small-12 large-5">
+              <img className='img thumbnail' src={capmpPic}></img>
+              <h5>Shanghai Barcamp Spring 2016</h5>
+              <p>March 26, 2016.</p>
+              <p>Talked about how to study javascript and d3.js, and how to build project step by step.</p>
+              <p>Event link <a href='http://www.meetup.com/Techyizu/events/229221694/' target='_blank'>here</a>.</p>
             </div>
           </div>
         </div>
