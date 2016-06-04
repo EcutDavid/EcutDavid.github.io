@@ -24,8 +24,7 @@ export default class About extends Component {
               target='_blank'
               href='https://github.com/EcutDavid'
               >
-              <i className='fa fa-github'>
-              </i>
+              <i className='fa fa-github' />
               Github
             </a>
             <a
@@ -33,8 +32,7 @@ export default class About extends Component {
               target='_blank'
               href='http://stackoverflow.com/users/5076405/david-guan'
               >
-              <i className='fa fa-stack-overflow'>
-              </i>
+              <i className='fa fa-stack-overflow' />
               Stack overflow
             </a>
             <a
@@ -42,8 +40,7 @@ export default class About extends Component {
               target='_blank'
               href='https://cn.linkedin.com/in/david-guan-64b69b110'
               >
-              <i className='fa fa-linkedin-square'>
-              </i>
+              <i className='fa fa-linkedin-square' />
               linkedin
             </a>
             <a
@@ -51,8 +48,7 @@ export default class About extends Component {
               target='_blank'
               href='https://twitter.com/davidguandev'
               >
-              <i className='fa fa-twitter'>
-              </i>
+              <i className='fa fa-twitter' />
               Twitter
             </a>
           </div>
