@@ -8,6 +8,7 @@ export default class Blogs extends Component {
   render() {
     return (
       <div className='Blogs' id={BLOGS}>
+        <h2 className='title'>Blogs</h2>
         <div className='row column small-11 small-centered'>
           <a
             className='column small-12 medium-6 container'
