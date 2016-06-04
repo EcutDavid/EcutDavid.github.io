@@ -63,7 +63,7 @@ export default class About extends Component {
               <h5>Data | World Bank</h5>
               <p>My first project in Wiredcraft, a data visualization website.</p>
               <p>My responsibilities are implement the requirements in front-end and improve the performance of application.</p>
-              <p>Started from Nov. 2016.</p>
+              <p>Started from Nov. 2015.</p>
               <p>You can view the website <a href='http://beta.data.worldbank.org/' target='_blank'>here</a>.</p>
             </div>
             <div className="column small-12 medium-6 large-4">
