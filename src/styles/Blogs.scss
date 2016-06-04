@@ -1,0 +1,49 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+.Blogs {
+  padding: 5px 0 10px 0;
+  background-color: #4b83e7;
+
+  .container {
+    margin: 20px 0 0 0;
+    text-align: center;
+
+    i {
+      color: #66ff99;
+      display: block;
+      font-size: 7em;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #fff;
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  .cnblogs {
+    i {
+      color: #00ccff;
+    }
+  }
+
+  a {
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    text-align: center;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    i {
+      display: block;
+    }
+  }
+}

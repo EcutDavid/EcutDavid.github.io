@@ -8,7 +8,6 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="Footer " id={CONTACT_ME}>
-
         <a href="mailto:davidguandev@gmail.com">
           <i className='fa fa-send' />
           Send me mail

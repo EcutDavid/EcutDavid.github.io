@@ -1,14 +1,33 @@
 import React, { Component } from 'react'
 
 import { BLOGS } from 'constants/domID'
+import 'styles/Blogs.scss'
+
 
 export default class Blogs extends Component {
   render() {
     return (
-      <div className="Blogs" id={BLOGS}>
-        CHINESE BLOGS
-        MEDIUM BLOGS
-        COMPONEY BLOGS
+      <div className='Blogs row' id={BLOGS}>
+        <div className='column small-11 small-centered'>
+          <a
+            className='column small-12 medium-6 container'
+            target='_blank'
+            href='https://medium.com/@davidguandev'
+          >
+            <i className='fa fa-medium'>
+            </i>
+            Medium, Since 2016
+          </a>
+          <a
+            className='column small-12 medium-6 container cnblogs'
+            target='_blank'
+            href='http://www.cnblogs.com/E-WALKER/'
+          >
+            <i className='fa fa-book'>
+            </i>
+            Cnblogs, Since 2014(written in Chinese)
+          </a>
+        </div>
       </div>
     )
   }
