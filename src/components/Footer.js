@@ -11,8 +11,8 @@ export default class Footer extends Component {
         <a href="mailto:davidguandev@gmail.com">
           <i className='fa fa-send' />
           Send me mail
-          <p className='mail'>davidguandev@gmail.com</p>
         </a>
+        <p className='mail'>davidguandev@gmail.com</p>
       </div>
     )
   }
