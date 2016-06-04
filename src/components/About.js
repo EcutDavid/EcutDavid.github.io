@@ -14,10 +14,14 @@ export default class About extends Component {
     return (
       <div className="About row" id={ABOUT_ME}>
         <div className='column small-11 small-centered'>
-          <p>Hi, I'm currently working as a developer at <a href='http://www.wiredcraft.com' target='_blank'>Wiredcraft</a>.</p>
-          <p>I have experience building websites(or single page applications) using complex frameworks such as <b>React, Redux and Angular </b> in the front end(using latest syntax feature such as ES6, 7).</p>
-          <p>Also built some back-end services in <b>C#, node.js</b>, interested in building mobile applications in <b>Swift, React-native</b>.</p>
-          <p>Except coding, I like reading and going on hiking holidays.</p>
+          <div className='row'>
+            <div className='column small-10 small-centered'>
+              <p>Hi, I'm currently working as a developer at <a href='http://www.wiredcraft.com' target='_blank'>Wiredcraft</a>.</p>
+              <p>I have experience building websites(or single page applications) using complex frameworks such as <b>React, Redux and Angular </b> in the front end(using latest syntax feature such as ES6, 7).</p>
+              <p>Also built some back-end services in <b>C#, node.js</b>, interested in building mobile applications in <b>Swift, React-native</b>.</p>
+              <p>Except coding, I like reading and going on hiking holidays.</p>
+            </div>
+          </div>
           <div className='row'>
             <a
               className='column small-6 medium-3 account-container'
