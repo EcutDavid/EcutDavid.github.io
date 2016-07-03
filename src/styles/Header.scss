@@ -1,13 +1,13 @@
 .Header {
   background: url('../images/heroBanner.png') no-repeat center center fixed;
   background-size: cover;
-  height: 600px;
+  height: 400px;
   position: relative;
   text-align: center;
 
   .mask-layer {
     background-color: #000;
-    height: 600px;
+    height: 400px;
     opacity: 0.3;
   }
 
@@ -54,12 +54,12 @@
 
   .avatar-area {
     position: relative;
-    top: -500px;
+    top: -300px;
 
     .avatar {
       background: url('../images/avatar.png') no-repeat center center;
       border-radius: 50%;
-      display: inline-block;
+      display: none;
       height: 160px;
       width: 160px;
     }
@@ -80,8 +80,9 @@
     color: #fff;
     cursor: pointer;
     display: inline-block;
+    font-weight: bold;
     position: relative;
-    top: -450px;
+    top: -250px;
 
     span {
       border-right: 2px solid #fff;
