@@ -5,7 +5,7 @@ import wbPic from '../assets/WB.png'
 import dv20Pic from '../assets/20.png'
 import gm from '../assets/gm.png'
 import reddit from '../assets/reddit.png'
-import books from '../assets/books.png'
+import xkcd from '../assets/xkcd.png'
 
 export default [{
   title: 'Data | World Bank',
@@ -61,13 +61,13 @@ export default [{
     ),
     className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
   }, {
-    title: 'Restful API in golang',
-    picture: books,
+    title: 'Online xkcd viewer',
+    picture: xkcd,
     description: (
       <div>
-        <p>Allow user send `get`, `post`, and `put` to data in server side.</p>
-        <p><b>Golang, React.js</b>. Source code in <a href='https://github.com/EcutDavid/restful-books-golang' target='_blank'>Github repo</a>.</p>
-        <p>View the <a href='http://davidguan.me/restful-books-golang/' target='_blank'>demo website</a>.</p>
+        <p>All of the comics from xkcd.</p>
+        <p><b>Golang, React.js</b>. Source code in <a href='https://github.com/EcutDavid/xkcdReader' target='_blank'>Github repo</a>.</p>
+        <p>View the <a href='http://davidguan.me/xkcdReader/' target='_blank'>demo website</a>.</p>
       </div>
     ),
     className: 'column small-12 medium-centered large-uncentered medium-6 large-4'

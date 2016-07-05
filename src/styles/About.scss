@@ -39,6 +39,9 @@
         width: 400px;
       }
     }
+    h5 {
+      font-weight: bold;
+    }
     @media screen and (min-width: 40em) {
       & > div:last-child:not(:first-child) {
         float: none;
