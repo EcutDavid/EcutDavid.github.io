@@ -13,7 +13,7 @@ export default class About extends Component {
           <div className='row'>
             <div className='column small-10 small-centered'>
               <p>Hi, I'm currently working as a developer at <a href='http://www.wiredcraft.com' target='_blank'>Wiredcraft</a>.</p>
-              <p>I have experience in building websites and single page applications using complex frameworks such as <b>React, Redux and Angular</b>.</p>
+              <p>I have experience in building websites and single page applications with React, Redux and Angular.</p>
               <p>I enjoy writing clean code(with ES6, SASS) and solving complex problems.</p>
               <p>I also built some back-end services in <b>C#, node.js</b>, interested in building mobile applications in <b>Swift, React-native</b>.</p>
             </div>
