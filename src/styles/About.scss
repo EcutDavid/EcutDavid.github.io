@@ -39,6 +39,9 @@
         width: 400px;
       }
     }
+    >div {
+      clear: none !important;
+    }
     h5 {
       font-weight: bold;
     }

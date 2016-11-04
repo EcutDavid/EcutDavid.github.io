@@ -73,6 +73,7 @@
     "motion-ui": "^1.2.2",
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react-dom": "^15.0.0",
+    "style-loader": "^0.13.1"
   }
 }
