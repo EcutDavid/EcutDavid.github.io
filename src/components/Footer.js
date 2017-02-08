@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// TODO: setup Ga
 import { CONTACT_ME } from 'constants/domID'
 import 'styles/Footer.scss'
 
@@ -10,7 +11,7 @@ export default class Footer extends Component {
       <div className="Footer " id={CONTACT_ME}>
         <a href="mailto:davidguandev@gmail.com">
           <i className='fa fa-send' />
-          Send me mail
+          Email me
         </a>
         <p className='mail'>davidguandev@gmail.com</p>
       </div>
