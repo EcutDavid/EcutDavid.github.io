@@ -5,7 +5,7 @@ import wbPic from '../assets/WB.png'
 import dv20Pic from '../assets/20.png'
 import gm from '../assets/gm.png'
 import reddit from '../assets/reddit.png'
-import xkcd from '../assets/xkcd.png'
+import xkcd from '../assets/xkcd-r.png'
 import b from '../assets/b.png'
 import b_3d from '../assets/b-3d.png'
 
@@ -62,34 +62,12 @@ export default [{
     ),
     className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
   }, {
-    title: 'Online xkcd viewer',
+    title: 'React native xkcd viewer',
     picture: xkcd,
     description: (
       <div>
         <p>All of the comics from xkcd.</p>
-        <p><b>Golang, React.js</b>. Source code in <a href='https://github.com/EcutDavid/xkcdReader' target='_blank'>Github repo</a>.</p>
-        <p>View the <a href='http://davidguan.me/xkcdReader/' target='_blank'>demo website</a>.</p>
-      </div>
-    ),
-    className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
-  }, {
-    title: 'Weather application',
-    picture: gm,
-    description: (
-      <div>
-        <p>Click anywhere, show you the weather.</p>
-        <p><b>Google map API</b>. Source code in <a href='https://github.com/EcutDavid/google-map-weather' target='_blank'>Github repo</a>.</p>
-        <p>View the <a href='http://davidguan.me/google-map-weather/' target='_blank'>demo website</a>.</p>
-      </div>
-    ),
-    className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
-  }, {
-    title: 'Bounce balls, 2D',
-    picture: b,
-    description: (
-      <div>
-        <p>Html 5 Canvas API only, without using any third party library. Source code in <a href='https://github.com/EcutDavid/sp-balls' target='_blank'>Github repo</a>.</p>
-        <p>View the <a href='http://davidguan.me/sp-balls/' target='_blank'>demo website</a>.</p>
+        <p><b>Golang, React.js</b>. Source code in <a href='https://github.com/EcutDavid/react-native-xkcdReader' target='_blank'>Github repo</a>.</p>
       </div>
     ),
     className: 'column small-12 medium-centered large-uncentered medium-6 large-4'

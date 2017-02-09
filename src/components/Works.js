@@ -24,9 +24,6 @@ export default class Works extends Component {
               <div className='row work-container'>
                 {data.slice(3, 6).map((d, k) => (<Work {...d} key={k} />))}
               </div>
-              <div className='row work-container'>
-                {data.slice(6, 9).map((d, k) => (<Work {...d} key={k} />))}
-              </div>
             </div>
           ) : (
             <noscript />

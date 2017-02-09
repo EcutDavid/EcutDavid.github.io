@@ -46,10 +46,10 @@ export default class About extends Component {
             <a
               className='column small-6 medium-3 account-container'
               target='_blank'
-              href='https://twitter.com/davidguandev'
-              >
-              <i className='fa fa-twitter' />
-              Twitter
+              href='https://www.youtube.com/channel/UCxSyYbODJF3ULNMoRwxjJbg'
+            >
+              <i className='fa fa-youtube' />
+              Youtube channel
             </a>
           </div>
           <h2 className='title'>Works</h2>
