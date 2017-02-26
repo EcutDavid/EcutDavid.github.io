@@ -67,7 +67,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "core-js": "^2.0.0",
     "font-awesome": "^4.6.1",
-    "foundation-sites": "^6.2.3",
+    "foundation-sites": "6.2.4",
     "html-utilities": "^1.0.3",
     "html-webpack-plugin": "^2.17.0",
     "motion-ui": "^1.2.2",

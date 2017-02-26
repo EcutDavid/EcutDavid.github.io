@@ -5,7 +5,7 @@ import Footer from 'components/Footer'
 import About from 'components/About'
 import BLogs from 'components/BLogs'
 
-class AppComponent extends Component {
+export default class AppComponent extends Component {
   render() {
     return (
       <div className="App">
@@ -16,9 +16,4 @@ class AppComponent extends Component {
       </div>
     )
   }
-}
-
-AppComponent.defaultProps = {
-}
-
-export default AppComponent
+};
