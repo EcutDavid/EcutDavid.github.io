@@ -1,7 +1,7 @@
 'use strict'
 const path = require('path')
 const srcPath = path.join(__dirname, '/../src')
-const dfltPort = 8000
+const dfltPort = process.env.PORT || 8000
 function getDefaultModules() {
   return {
     preLoaders: [{
