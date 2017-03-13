@@ -57,7 +57,6 @@ export default [{
       <div>
         <p>User authentication, post submit, up & down vote, and comments.</p>
         <p><b>React.js, node.js, Redux.js</b>. Source code in <a href='https://github.com/EcutDavid/simple-reddit' target='_blank'>Github repo</a>.</p>
-        <p>View the <a href='http://davidguan.me/simple-reddit' target='_blank'>demo website</a>.</p>
       </div>
     ),
     className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
