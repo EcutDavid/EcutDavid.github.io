@@ -6,6 +6,12 @@
   .action-button {
     display: block;
     margin: 9px auto;
+    border-radius: 34px;
+    font-weight: bold;
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   .account-container {
