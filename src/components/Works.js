@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Work from './Work'
 import data from 'constants/worksData'
 import { MY_WORKS } from 'constants/domID'
+import 'styles/Works.scss'
 
 export default class Works extends Component {
   constructor() {
@@ -17,20 +18,16 @@ export default class Works extends Component {
         <h2 className='title'>My works</h2>
         <div className='row work-container'>
           {
-            data.slice(0, 3).map((d, k) => (<Work {...d} key={k} />))
+            data.slice(0, showAll ? 6 : 3).map((d, k) =>
+              <Work
+                {...d}
+                key={k}
+                className={`column work small-12 medium-6 large-4 ${(!showAll && k == 2) ? 'medium-centered large-uncentered' : ''}`}
+                index={k}
+              />
+            )
           }
         </div>
-        {
-          showAll ? (
-            <div>
-              <div className='row work-container'>
-                {data.slice(3, 6).map((d, k) => (<Work {...d} key={k} />))}
-              </div>
-            </div>
-          ) : (
-            <noscript />
-          )
-        }
         <button
           className='button action-button'
           onClick={() => { this.setState({ showAll: !showAll })}}

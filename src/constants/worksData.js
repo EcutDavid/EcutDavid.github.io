@@ -13,12 +13,11 @@ export default [{
   picture: wbPic,
   description: (
       <div>
-        <p>My first project in Wiredcraft, a data visualization website.</p>
-        <p>Implement the requirements in front-end and improved the performance of application.</p>
+        <p>My first project in Wiredcraft.</p>
+        <p>Implemented the requirements in front-end and improved the performance of application.</p>
         <p>View the <a href='http://data.worldbank.org/' target='_blank'>website</a>.</p>
       </div>
-    ),
-    className: 'column small-12 medium-6 large-4'
+    )
   }, {
     title: 'CNC software',
     picture: cncPic,
@@ -27,8 +26,7 @@ export default [{
         <p>Aim at control CNC(Computer Numerical Control) card which is plugged in PC.</p>
         <p><b>C#, WPF and Open GL</b>. Source code in <a href='https://github.com/EcutDavid/eCut-CNC-software' target='_blank'>Github repo</a>.</p>
       </div>
-    ),
-    className: 'column small-12 medium-6 large-4'
+    )
   }, {
     title: 'Data visualization in 20 days',
     picture: dv20Pic,
@@ -37,8 +35,7 @@ export default [{
         <p>Data visualization practises.</p>
         <p><b>React.js, d3.js</b>. Source code in <a href='https://github.com/EcutDavid/D3In20Days' target='_blank'>Github repo</a>.</p>
       </div>
-    ),
-    className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
+    )
   }, {
     title: 'Bounce balls, 3D',
     picture: b_3d,
@@ -47,8 +44,7 @@ export default [{
         <p>built with <b>three.js</b>, Source code in <a href='https://github.com/EcutDavid/bounce-balls-3D' target='_blank'>Github repo</a>.</p>
         <p>View the <a href='http://davidguan.me/bounce-balls-3D/' target='_blank'>demo website</a>.</p>
       </div>
-    ),
-    className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
+    )
   }, {
     title: 'Simple reddit',
     picture: reddit,
@@ -57,8 +53,7 @@ export default [{
         <p>User authentication, post submit, up & down vote, and comments.</p>
         <p><b>React.js, node.js, Redux.js</b>. Source code in <a href='https://github.com/EcutDavid/simple-reddit' target='_blank'>Github repo</a>.</p>
       </div>
-    ),
-    className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
+    )
   }, {
     title: 'React native xkcd viewer',
     picture: xkcd,
@@ -67,7 +62,6 @@ export default [{
         <p>All of the comics from xkcd.</p>
         <p><b>Golang, React.js</b>. Source code in <a href='https://github.com/EcutDavid/react-native-xkcdReader' target='_blank'>Github repo</a>.</p>
       </div>
-    ),
-    className: 'column small-12 medium-centered large-uncentered medium-6 large-4'
+    )
   }
 ]

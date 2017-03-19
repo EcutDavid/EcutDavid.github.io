@@ -26,34 +26,4 @@
     margin: 30px 0 15px 0;
     text-align: center;
   }
-
-  .work-container {
-    text-align: center;
-    .img {
-      height: 300px;
-      width: 300px;
-    }
-    &.speeches {
-      .img {
-        height: 400px;
-        width: 400px;
-      }
-    }
-    >div {
-      clear: none !important;
-    }
-    h5 {
-      font-weight: bold;
-    }
-    @media screen and (min-width: 40em) {
-      & > div:last-child:not(:first-child) {
-        float: none;
-      }
-    }
-    @media screen and (min-width: 64em) {
-      & > div:last-child:not(:first-child) {
-        float: right;
-      }
-    }
-  }
 }
