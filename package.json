@@ -22,7 +22,6 @@
   "author": "Your name here",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
-    "babel-core": "^6.0.0",
     "babel-eslint": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-polyfill": "^6.3.14",
