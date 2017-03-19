@@ -13,7 +13,7 @@ export default class About extends Component {
           <div className='row'>
             <div className='column small-10 small-centered'>
               <p>Currently working as a developer at <a href='https://www.splunk.com/' target='_blank'>Splunk</a>.</p>
-              <p>Have experience in building websites and single page applications with React, Redux and node.js.</p>
+              <p>Have experience in building websites and single page applications with <b>React</b>, <b>Redux</b> and <b>node.js</b>.</p>
               <p>Enjoy writing clean code and solving complex problems.</p>
               <p>Built some back-end services in <b>C#, node.js</b> with <b>AWS services</b>.</p>
             </div>
