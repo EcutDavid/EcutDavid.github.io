@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Work from './Work'
 import data from 'constants/worksData'
+import { MY_WORKS } from 'constants/domID'
 
 export default class Works extends Component {
   constructor() {
@@ -12,7 +13,8 @@ export default class Works extends Component {
   render() {
     const { showAll } = this.state
     return (
-      <div>
+      <div id={MY_WORKS}>
+        <h2 className='title'>My works</h2>
         <div className='row work-container'>
           {
             data.slice(0, 3).map((d, k) => (<Work {...d} key={k} />))

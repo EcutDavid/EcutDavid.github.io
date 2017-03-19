@@ -16,4 +16,4 @@ export default class AppComponent extends Component {
       </div>
     )
   }
-};
+}

@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { pageScrollTopAnimate } from 'html-utilities'
 
 import {
-  ABOUT_ME,
-  BLOGS,
+  MY_WORKS,
   CONTACT_ME
 } from 'constants/domID'
 import 'styles/Header.scss'
@@ -56,8 +55,7 @@ class Header extends Component {
             className='nav-menu-dropdown'
             ref='navMenuDropdown'
           >
-            <span onClick={this.onLinkClick.bind(this, ABOUT_ME)}>ABOUT ME</span>
-            <span onClick={this.onLinkClick.bind(this, BLOGS)}>BLOGS</span>
+            <span onClick={this.onLinkClick.bind(this, MY_WORKS)}>MY WORKS</span>
             <span onClick={this.onLinkClick.bind(this, CONTACT_ME)}>CONTACT</span>
           </div>
         </div>
@@ -67,8 +65,7 @@ class Header extends Component {
           <p className='description'>Web developer</p>
         </div>
         <div className='nav-bar'>
-          <span onClick={this.onLinkClick.bind(this, ABOUT_ME)}>ABOUT ME</span>
-          <span onClick={this.onLinkClick.bind(this, BLOGS)}>BLOGS</span>
+          <span onClick={this.onLinkClick.bind(this, MY_WORKS)}>MY WORKS</span>
           <span onClick={this.onLinkClick.bind(this, CONTACT_ME)}>CONTACT</span>
         </div>
       </div>

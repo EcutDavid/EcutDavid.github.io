@@ -52,7 +52,6 @@ export default class About extends Component {
               Youtube channel
             </a>
           </div>
-          <h2 className='title'>Works</h2>
           <Works />
         </div>
       </div>
