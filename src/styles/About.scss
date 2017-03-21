@@ -32,4 +32,21 @@
     margin: 30px 0 15px 0;
     text-align: center;
   }
+
+  .description-list {
+    min-height: 40px;
+
+    p {
+      display: inline-block;
+    }
+
+    .typing-cursor {
+      border-left: 1.5px solid #000;
+      opacity: 1;
+      transition: opacity 2s;
+      &.done {
+        opacity: 0;
+      }
+    }
+  }
 }
