@@ -8,11 +8,25 @@ import 'styles/Works.scss'
 export default class Works extends Component {
   constructor() {
     super()
-    this.state={ showAll: false }
+    this.state={
+      showActionButton: true,
+      showAll: false
+    }
+  }
+
+  toggleShowAll() {
+    const { showAll } = this.state
+
+    this.setState({
+      showAll: !showAll
+    });
+    setTimeout(() => {
+      this.setState({showActionButton: false});
+    }, 1500);
   }
 
   render() {
-    const { showAll } = this.state
+    const { showAll, showActionButton } = this.state
     return (
       <div id={MY_WORKS}>
         <h2 className='title'>My works</h2>
@@ -28,12 +42,15 @@ export default class Works extends Component {
             )
           }
         </div>
-        <button
-          className='button action-button'
-          onClick={() => { this.setState({ showAll: !showAll })}}
-        >
-          { showAll ? 'Show Less' : 'Show More'}
-        </button>
+        {showActionButton && (
+          <button
+            className={`button action-button ${showAll ? 'hide-button' : ''}`}
+            disabled={showAll ? true : false}
+            onClick={() => this.toggleShowAll()}
+          >
+            Show More
+          </button>
+        )}
       </div>
     )
   }

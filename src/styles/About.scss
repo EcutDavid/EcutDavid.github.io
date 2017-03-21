@@ -9,6 +9,14 @@
     border-radius: 34px;
     font-weight: bold;
 
+    overflow-y: hidden;
+    transition: opacity 1.5s;
+    opacity: 1;
+
+    &.hide-button {
+      opacity: 0;
+    }
+
     &:focus {
       outline: 0;
     }
