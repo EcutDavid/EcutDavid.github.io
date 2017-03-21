@@ -1,17 +1,19 @@
 @import 'node_modules/foundation-sites/scss/foundation';
 
 .Footer {
-  padding: 20px 0 10px 0;
+  padding: 20px 0 20px 0;
   background-color: #3c3d41;
 
   a {
     color: #fff;
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    transition: color 2s;
+    outline: 0;
 
     &:hover {
-      color: $primary-color;
+      color: skyblue;
     }
 
     i {

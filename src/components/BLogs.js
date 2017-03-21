@@ -16,7 +16,7 @@ export default class Blogs extends Component {
             href='https://medium.com/@davidguandev'
           >
             <i className='fa fa-medium' />
-            Medium, Since 2016
+            Medium
           </a>
           <a
             className='column small-12 medium-6 container cnblogs'
@@ -24,7 +24,7 @@ export default class Blogs extends Component {
             href='http://www.cnblogs.com/E-WALKER/'
           >
             <i className='fa fa-book' />
-            Cnblogs, Since 2014(written in Chinese)
+            Cnblogs(written in Chinese)
           </a>
         </div>
       </div>

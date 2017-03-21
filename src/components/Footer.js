@@ -11,9 +11,8 @@ export default class Footer extends Component {
       <div className="Footer " id={CONTACT_ME}>
         <a href="mailto:davidguandev@gmail.com">
           <i className='fa fa-send' />
-          Email me
+          davidguandev@gmail.com
         </a>
-        <p className='mail'>davidguandev@gmail.com</p>
       </div>
     )
   }
