@@ -38,12 +38,14 @@
 
     p {
       display: inline-block;
+      white-space: pre-wrap;
     }
 
     .typing-cursor {
       border-left: 1.5px solid #000;
       opacity: 1;
       transition: opacity 2s;
+      white-space: pre;
       &.done {
         opacity: 0;
       }

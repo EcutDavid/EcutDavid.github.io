@@ -56,8 +56,8 @@ export default class About extends Component {
         <div key={i}>
           <p>
             {text.slice(0, pointer)}
+            {((pointer < length) || isDone) && <span className={`typing-cursor ${isDone ? 'done' : ''}`} />}
           </p>
-          {((pointer < length) || isDone) && <span className={`typing-cursor ${isDone ? 'done' : ''}`} />}
         </div>
       )
     });
