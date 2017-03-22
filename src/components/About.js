@@ -97,7 +97,7 @@ export default class About extends Component {
               href='https://cn.linkedin.com/in/david-guan-64b69b110'
               >
               <i className='fa fa-linkedin-square' />
-              linkedin
+              Linkedin
             </a>
             <a
               className='column small-6 medium-3 account-container'
