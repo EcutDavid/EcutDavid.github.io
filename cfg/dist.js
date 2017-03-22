@@ -7,7 +7,6 @@ let baseConfig = require('./base')
 let defaultSettings = require('./defaults')
 
 // Add needed plugins here
-let BowerWebpackPlugin = require('bower-webpack-plugin')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 let config = Object.assign({}, baseConfig, {
@@ -18,9 +17,6 @@ let config = Object.assign({}, baseConfig, {
     new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
-    }),
-    new BowerWebpackPlugin({
-      searchResolveModulesDirectories: false
     }),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
