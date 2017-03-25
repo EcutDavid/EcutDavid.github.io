@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
 
 import { ABOUT_ME } from 'constants/domID'
+import DESCRIPTION_LIST from 'constants/descriptionList'
 import Works from './Works'
 import 'styles/About.scss'
 
-const DESCRIPTION_LIST = [
-  'Currently working as a developer at Splunk.',
-  'Have experience in building websites and single page applications with React, Redux and node.js.',
-  'Enjoy writing clean code and solving complex problems.',
-  'Built some back-end services in C#, node.js with AWS services.'
-];
 
 export default class About extends Component {
   constructor() {
     super();
     this.state = {
-      descriptionList: DESCRIPTION_LIST.map(d => ({
-        text: d,
+      descriptionList: DESCRIPTION_LIST.map(({text, meta}) => ({
+        meta,
+        text: text,
         pointer: 0
       }))
     };
@@ -38,7 +34,7 @@ export default class About extends Component {
       this.setState({descriptionList});
       setTimeout(() => {
         this.incrementDescriptionText();
-      }, 40);
+      }, 30);
     }
   }
 
@@ -46,16 +42,53 @@ export default class About extends Component {
     this.incrementDescriptionText();
   }
 
+  mappingText(text, pointer, meta) {
+    let newText = text.slice(0, pointer);
+    if (!meta || !meta.tagList) {
+      return newText;
+    }
+    const { tagList } = meta;
+    let tagListPointer = 0;
+    let shouldWrapTag = false;
+    let displacement = 0;
+    let domEndingTag = '';
+
+    for (let i = 0; i < newText.length; i++) {
+      const {start, end, tag, attributes} = tagList[tagListPointer];
+      const domStartTag = `<${tag} ${attributes ? attributes : ''}>`;
+      domEndingTag = `</${tag}>`;
+
+      if (i === (start + displacement)) {
+        newText = `${newText.slice(0, i)}${domStartTag}${newText.slice(i)}`;
+        displacement += domStartTag.length;
+        i += domStartTag.length;
+        shouldWrapTag = true;
+      }
+
+      if (i === (end + displacement)) {
+        newText = `${newText.slice(0, i)}${domEndingTag}${newText.slice(i)}`;
+        displacement += domEndingTag.length;
+        i += domEndingTag.length;
+        tagListPointer++;
+        shouldWrapTag = false;
+      }
+    }
+    if (shouldWrapTag) {
+      newText += domEndingTag;
+    }
+    return newText;
+  }
+
   mapDescriptionList() {
     const { descriptionList } = this.state;
-    return descriptionList.map(({text, pointer}, i) => {
+    return descriptionList.map(({text, pointer, meta}, i) => {
       const length = text.length;
       const isDone = (i === (descriptionList.length - 1)) &&
         pointer === length;
       return pointer > 0 && (
         <div key={i}>
           <p>
-            {text.slice(0, pointer)}
+            <span dangerouslySetInnerHTML={{__html: this.mappingText(text, pointer, meta)}} />
             {((pointer < length) || isDone) && <span className={`typing-cursor ${isDone ? 'done' : ''}`} />}
           </p>
         </div>
