@@ -1,10 +1,11 @@
 @import 'node_modules/foundation-sites/scss/foundation';
 
 .Footer {
-  padding: 20px 0 20px 0;
   background-color: #3c3d41;
+  height: 350px;
 
   a {
+    padding: 20px 0;
     color: #fff;
     display: block;
     font-size: 1.5em;

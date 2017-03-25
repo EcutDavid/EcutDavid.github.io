@@ -1,7 +1,7 @@
 @import 'node_modules/foundation-sites/scss/foundation';
 
 .About {
-  margin-top: 10px;
+  min-height: calc(100% - 350px - 400px);
 
   .action-button {
     display: block;
@@ -42,7 +42,8 @@
   }
 
   .description-list {
-    min-height: 40px;
+    margin-top: 10px;
+    min-height: 160px;
 
     p {
       display: inline-block;
