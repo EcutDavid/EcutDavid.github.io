@@ -29,12 +29,12 @@ export default [{
       </div>
     )
   }, {
-    title: 'Data visualization in 20 days',
+    title: 'D3 in 20 days',
     picture: dv20Pic,
     description: (
       <div>
         <p>Data visualization practice.</p>
-        <p><b>React.js, d3.js</b></p>
+        <p><b>React, D3.js</b></p>
         <a href='https://github.com/EcutDavid/D3In20Days' target='_blank'>Github repo</a>
       </div>
     )
@@ -54,7 +54,7 @@ export default [{
     description: (
       <div>
         <p>User authentication, post submit, up & down vote, and comments.</p>
-        <p><b>React.js, node.js, Redux.js</b></p>
+        <p><b>node.js, React, Redux</b></p>
         <a href='https://github.com/EcutDavid/simple-reddit' target='_blank'>Github repo</a>
       </div>
     )
