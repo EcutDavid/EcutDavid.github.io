@@ -29,6 +29,17 @@ export default [{
       </div>
     )
   }, {
+    title: 'Bounce balls',
+    picture: b_3d,
+    isIframe: true,
+    src: 'http://davidguan.me/bounce-balls-3D/',
+    description: (
+      <div>
+        <p>Built with <b>three.js</b>.</p>
+        <p><a href='https://github.com/EcutDavid/bounce-balls-3D' target='_blank'>Github repo</a></p>
+      </div>
+    )
+  },{
     title: 'D3 in 20 days',
     picture: dv20Pic,
     description: (
@@ -38,17 +49,7 @@ export default [{
         <a href='https://github.com/EcutDavid/D3In20Days' target='_blank'>Github repo</a>
       </div>
     )
-  }, {
-    title: 'Bounce balls, 3D',
-    picture: b_3d,
-    description: (
-      <div>
-        <p>Built with <b>three.js</b>.</p>
-        <p><a href='https://github.com/EcutDavid/bounce-balls-3D' target='_blank'>Github repo</a></p>
-        <a href='http://davidguan.me/bounce-balls-3D/' target='_blank'>Online demo</a>
-      </div>
-    )
-  }, {
+  },  {
     title: 'Simple reddit',
     picture: reddit,
     description: (
