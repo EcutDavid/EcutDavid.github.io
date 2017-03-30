@@ -23,7 +23,7 @@ export default [{
     picture: uccValidator,
     description: (
       <div>
-        <p>An online application helps Splunk add-on developers saving time from debugging errors caused by errors in configuration.</p>
+        <p>An online application helps Splunk add-on developers saving time from debugging problems caused by errors in configuration.</p>
         <a href='https://github.com/EcutDavid/splunk-ucc-config-validator' target='_blank'>Github repo</a>
       </div>
     )
