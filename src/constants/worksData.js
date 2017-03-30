@@ -1,12 +1,12 @@
 import React from 'react'
 
-import cncPic from '../assets/CNC.png'
 import wbPic from '../assets/WB.png'
 import dv20Pic from '../assets/20.png'
 import reddit from '../assets/reddit.png'
 import xkcd from '../assets/xkcd-r.png'
 import b from '../assets/b.png'
 import b_3d from '../assets/b-3d.png'
+import uccValidator from '../assets/ucc-validator.png'
 
 export default [{
   title: 'Data | World Bank',
@@ -19,13 +19,12 @@ export default [{
       </div>
     )
   }, {
-    title: 'CNC software',
-    picture: cncPic,
+    title: 'Splunk UCC configuration validator',
+    picture: uccValidator,
     description: (
       <div>
-        <p>A desktop application for control CNC cards which plugged in PC.</p>
-        <p><b>C#, WPF and Open GL</b></p>
-        <a href='https://github.com/EcutDavid/eCut-CNC-software' target='_blank'>Github repo</a>
+        <p>An online application helps Splunk add-on developers saving time from debugging errors caused by errors in configuration.</p>
+        <a href='https://github.com/EcutDavid/splunk-ucc-config-validator' target='_blank'>Github repo</a>
       </div>
     )
   }, {
