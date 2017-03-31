@@ -1,5 +1,9 @@
 .work {
   min-height: 540px;
+
+  & > div > p {
+    margin-bottom: 5px;
+  }
   iframe {
     border: none;
     box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);

@@ -14,7 +14,7 @@ export default [{
   description: (
       <div>
         <p>My first project in Wiredcraft.</p>
-        <p>Implemented the requirements in front-end and improved the performance.</p>
+        <p>Implemented front-end routing, state management, overview pages, part of data viz charts and performance tuning.</p>
         <a href='http://data.worldbank.org/' target='_blank'>Production website</a>
       </div>
     )
