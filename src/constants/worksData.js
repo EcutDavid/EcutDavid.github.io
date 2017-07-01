@@ -5,7 +5,7 @@ import dv20Pic from '../assets/20.png'
 import reddit from '../assets/reddit.png'
 import xkcd from '../assets/xkcd-r.png'
 import b from '../assets/b.png'
-import b_3d from '../assets/b-3d.png'
+import webglWrokshop from '../assets/webgl-wrokshop.png'
 import uccValidator from '../assets/ucc-validator.png'
 
 export default [{
@@ -28,14 +28,14 @@ export default [{
       </div>
     )
   }, {
-    title: 'Bounce balls',
-    picture: b_3d,
-    isIframe: true,
-    src: 'http://davidguan.me/bounce-balls-3D/',
+    title: 'webgl-workshop.com',
+    picture: webglWrokshop,
+    // isIframe: true,
+    // src: 'http://davidguan.me/bounce-balls-3D/',
     description: (
       <div>
-        <p>Built with <b>three.js</b>.</p>
-        <p><a href='https://github.com/EcutDavid/bounce-balls-3D' target='_blank'>Github repo</a></p>
+        <p>A step by step physics practicing guide for implementing 2D/3D rendering with WebGL.</p>
+        <p><a href='https://github.com/EcutDavid/webgl-workshop' target='_blank'>Github repo</a></p>
       </div>
     )
   },{
@@ -43,7 +43,7 @@ export default [{
     picture: dv20Pic,
     description: (
       <div>
-        <p>Data visualization practice.</p>
+        <p>One of my data visualization practice.</p>
         <p><b>React, D3.js</b></p>
         <a href='https://github.com/EcutDavid/D3In20Days' target='_blank'>Github repo</a>
       </div>
