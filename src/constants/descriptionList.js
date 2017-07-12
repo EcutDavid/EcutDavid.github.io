@@ -1,4 +1,4 @@
-const CURRENT_POSITION = 'Currently working as a software engineer at Splunk.';
+const CURRENT_POSITION = 'Currently working as a software engineer at Canva.';
 const MAIN_EXPERIENCE = 'Have experience in building websites and single page applications with React, Redux and node.js.'
 const SECOND_EXPERIENCE = 'Built some back-end services in C#, node.js with AWS services.'
 
@@ -8,9 +8,9 @@ const descriptionList = [{
       tagList: [
         {
           tag: 'a',
-          start: CURRENT_POSITION.indexOf('Splunk'),
-          end: CURRENT_POSITION.indexOf('Splunk') + 'Splunk'.length,
-          attributes: 'href="https://www.splunk.com/" target="_blank"'
+          start: CURRENT_POSITION.indexOf('Canva'),
+          end: CURRENT_POSITION.indexOf('Canva') + 'Canva'.length,
+          attributes: 'href="https://www.canva.com/" target="_blank"'
         }
       ]
     }
