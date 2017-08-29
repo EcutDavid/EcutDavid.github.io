@@ -1,6 +1,14 @@
 .work {
   min-height: 540px;
 
+  & > a > img {
+    filter: blur(3px);
+    transition: filter 0.5s ease-in-out;
+
+    &:hover {
+      filter: none;
+    }
+  }
   & > div > p {
     margin-bottom: 5px;
   }

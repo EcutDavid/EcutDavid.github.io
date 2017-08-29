@@ -10,6 +10,7 @@ import uccValidator from '../assets/ucc-validator.png'
 
 export default [{
   title: 'Data | World Bank',
+  href: 'http://data.worldbank.org/',
   picture: wbPic,
   description: (
       <div>
@@ -20,6 +21,7 @@ export default [{
     )
   }, {
     title: 'Splunk UCC configuration validator',
+    href: 'https://github.com/EcutDavid/splunk-ucc-config-validator',
     picture: uccValidator,
     description: (
       <div>
@@ -29,6 +31,7 @@ export default [{
     )
   }, {
     title: 'webgl-workshop.com',
+    href: 'https://github.com/EcutDavid/webgl-workshop',
     picture: webglWrokshop,
     // isIframe: true,
     // src: 'http://davidguan.me/bounce-balls-3D/',
@@ -40,6 +43,7 @@ export default [{
     )
   },{
     title: 'D3 in 20 days',
+    href: 'https://github.com/EcutDavid/D3In20Days',
     picture: dv20Pic,
     description: (
       <div>
@@ -50,6 +54,7 @@ export default [{
     )
   },  {
     title: 'Simple reddit',
+    href: 'https://github.com/EcutDavid/simple-reddit',
     picture: reddit,
     description: (
       <div>
@@ -60,6 +65,7 @@ export default [{
     )
   }, {
     title: 'React native xkcd viewer',
+    href: 'https://github.com/EcutDavid/react-native-xkcdReader',
     picture: xkcd,
     description: (
       <div>

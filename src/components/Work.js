@@ -19,21 +19,25 @@ export default class Work extends Component {
   }
 
   render() {
-    const { title, picture, description, className, index, isIframe, src } = this.props
+    const { title, picture, description, className, index, isIframe, src, href } = this.props
     const { pageLoaded } = this.state;
 
     return (
       <div className={className} style={index === 5 ? { float: 'right' } : {}}>
         {
-          !isIframe ?
-            <img className='img thumbnail' src={picture} /> :
+          !isIframe ?(
+            <a href={href} target='_blank'>
+              <img className='img thumbnail' src={picture} />
+            </a>
+          ) : (
             <iframe
               className='img thumbnail'
               width="300"
               height="300"
               scrolling="no"
               src={pageLoaded ? src : ''}
-          />
+            />
+          )
         }
         <h5>{ title }</h5>
         { description }
