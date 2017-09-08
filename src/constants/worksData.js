@@ -20,13 +20,13 @@ export default [{
       </div>
     )
   }, {
-    title: 'Splunk UCC configuration validator',
-    href: 'https://github.com/EcutDavid/splunk-ucc-config-validator',
-    picture: uccValidator,
+    title: 'Photo Filter',
+    href: 'http://davidguan.me/photo-filter',
+    picture: 'https://user-images.githubusercontent.com/10692276/30209095-996269d4-94d9-11e7-866f-b0ed77ce30f1.png',
     description: (
       <div>
-        <p>An online application helps Splunk add-on developers saving time from debugging problems caused by errors in configuration.</p>
-        <a href='https://github.com/EcutDavid/splunk-ucc-config-validator' target='_blank'>Github repo</a>
+        <p>An online application allows you filter an image and download the result.</p>
+        <a href='https://github.com/EcutDavid/photo-filter' target='_blank'>Github repo</a>
       </div>
     )
   }, {
@@ -52,15 +52,14 @@ export default [{
         <a href='https://github.com/EcutDavid/D3In20Days' target='_blank'>Github repo</a>
       </div>
     )
-  },  {
-    title: 'Simple reddit',
-    href: 'https://github.com/EcutDavid/simple-reddit',
-    picture: reddit,
+  }, {
+    title: 'Splunk UCC configuration validator',
+    href: 'https://github.com/EcutDavid/splunk-ucc-config-validator',
+    picture: uccValidator,
     description: (
       <div>
-        <p>User authentication, post submit, up & down vote, and comments.</p>
-        <p><b>node.js, React, Redux</b></p>
-        <a href='https://github.com/EcutDavid/simple-reddit' target='_blank'>Github repo</a>
+        <p>An online application helps Splunk add-on developers saving time from debugging problems caused by errors in configuration.</p>
+        <a href='https://github.com/EcutDavid/splunk-ucc-config-validator' target='_blank'>Github repo</a>
       </div>
     )
   }, {
