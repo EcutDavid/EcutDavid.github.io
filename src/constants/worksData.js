@@ -12,11 +12,9 @@ export default [{
   title: 'webgl-workshop.com',
   href: 'https://github.com/EcutDavid/webgl-workshop',
   picture: webglWrokshop,
-  // isIframe: true,
-  // src: 'http://davidguan.me/bounce-balls-3D/',
   description: (
     <div>
-      <p>A step by step physics practicing guide for implementing 2D/3D rendering with WebGL.</p>
+      <p>A step by step practical guide for implementing 2D/3D rendering with WebGL.</p>
       <p><a href='https://github.com/EcutDavid/webgl-workshop' target='_blank'>Github repo</a></p>
     </div>
   )
