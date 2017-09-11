@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import BLogs from 'components/BLogs'
 
 import { CONTACT_ME } from 'constants/domID'
 import 'styles/Footer.scss'

@@ -2,7 +2,6 @@ import React from 'react'
 
 import wbPic from '../assets/WB.png'
 import dv20Pic from '../assets/20.png'
-import reddit from '../assets/reddit.png'
 import xkcd from '../assets/xkcd-r.png'
 import b from '../assets/b.png'
 import webglWrokshop from '../assets/webgl-wrokshop.png'
