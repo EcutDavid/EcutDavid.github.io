@@ -1,7 +1,6 @@
 @charset 'utf-8';
 
 @import 'node_modules/foundation-sites/scss/foundation';
-@import 'node_modules/motion-ui/src/motion-ui';
 @import './_settings.scss';
 
 @include foundation-global-styles;
@@ -13,7 +12,6 @@
 // @include foundation-range-input;
 @include foundation-accordion;
 @include foundation-accordion-menu;
-@include foundation-badge;
 @include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
@@ -24,7 +22,7 @@
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
 @include foundation-flex-video;
-@include foundation-label;
+// @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
 @include foundation-orbit;
@@ -45,10 +43,6 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
-
-@include motion-ui-transitions;
-@include motion-ui-animations;
-
 
 * {
   box-sizing: border-box;

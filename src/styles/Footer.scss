@@ -2,10 +2,13 @@
 
 .Footer {
   background-color: #3c3d41;
-  min-height: 350px;
+  min-height: 60px;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
 
-  a {
-    padding: 20px 0;
+  &>a {
+    padding: 5px 0 20px;
     color: #fff;
     display: block;
     font-size: 1.5em;
@@ -26,5 +29,11 @@
     font-size: 15px;
     text-align: center;
     color: #fff;
+  }
+
+  .footer-link {
+    font-size: 3.5em;
+    margin: 0 15px;
+    display: inline-block;
   }
 }

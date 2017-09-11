@@ -127,10 +127,10 @@ export default class About extends Component {
             <a
               className='column small-6 medium-3 account-container'
               target='_blank'
-              href='https://cn.linkedin.com/in/david-guan-64b69b110'
+              href='https://medium.com/@davidguandev'
               >
-              <i className='fa fa-linkedin-square' />
-              Linkedin
+              <i className='fa fa-medium' />
+              Medium
             </a>
             <a
               className='column small-6 medium-3 account-container'

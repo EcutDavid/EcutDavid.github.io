@@ -29,7 +29,7 @@ export default class Works extends Component {
     const { showAll, showActionButton } = this.state
     return (
       <div id={MY_WORKS}>
-        <h2 className='title'>My works</h2>
+        <h2 className='title'>My Works</h2>
         <div className='row work-container'>
           {
             data.slice(0, showAll ? 6 : 3).map((d, k) =>

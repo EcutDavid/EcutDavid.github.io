@@ -62,7 +62,7 @@ class Header extends Component {
         <div className='avatar-area'>
           <figure className='avatar' />
           <h1 className='name'>David Guan</h1>
-          <p className='description'>Web developer</p>
+          <p className='description'>Software Engineer</p>
         </div>
         <div className='nav-bar'>
           <span onClick={this.onLinkClick.bind(this, MY_WORKS)}>MY WORKS</span>

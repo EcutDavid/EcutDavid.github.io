@@ -9,17 +9,18 @@ import webglWrokshop from '../assets/webgl-wrokshop.png'
 import uccValidator from '../assets/ucc-validator.png'
 
 export default [{
-  title: 'Data | World Bank',
-  href: 'http://data.worldbank.org/',
-  picture: wbPic,
+  title: 'webgl-workshop.com',
+  href: 'https://github.com/EcutDavid/webgl-workshop',
+  picture: webglWrokshop,
+  // isIframe: true,
+  // src: 'http://davidguan.me/bounce-balls-3D/',
   description: (
-      <div>
-        <p>My first project in Wiredcraft.</p>
-        <p>Implemented front-end routing, state management, overview pages, part of data viz charts and performance tuning.</p>
-        <a href='http://data.worldbank.org/' target='_blank'>Production website</a>
-      </div>
-    )
-  }, {
+    <div>
+      <p>A step by step physics practicing guide for implementing 2D/3D rendering with WebGL.</p>
+      <p><a href='https://github.com/EcutDavid/webgl-workshop' target='_blank'>Github repo</a></p>
+    </div>
+  )
+},{
     title: 'Photo Filter',
     href: 'http://davidguan.me/photo-filter',
     picture: 'https://user-images.githubusercontent.com/10692276/30209095-996269d4-94d9-11e7-866f-b0ed77ce30f1.png',
@@ -30,18 +31,26 @@ export default [{
       </div>
     )
   }, {
-    title: 'webgl-workshop.com',
-    href: 'https://github.com/EcutDavid/webgl-workshop',
-    picture: webglWrokshop,
-    // isIframe: true,
-    // src: 'http://davidguan.me/bounce-balls-3D/',
+    title: 'Splunk UCC configuration validator',
+    href: 'https://github.com/EcutDavid/splunk-ucc-config-validator',
+    picture: uccValidator,
     description: (
       <div>
-        <p>A step by step physics practicing guide for implementing 2D/3D rendering with WebGL.</p>
-        <p><a href='https://github.com/EcutDavid/webgl-workshop' target='_blank'>Github repo</a></p>
+        <p>An online application helps Splunk add-on developers saving time from debugging problems caused by errors in configuration.</p>
+        <a href='https://github.com/EcutDavid/splunk-ucc-config-validator' target='_blank'>Github repo</a>
       </div>
     )
   },{
+  title: 'Data | World Bank',
+  href: 'http://data.worldbank.org/',
+  picture: wbPic,
+  description: (
+    <div>
+      <p>Implemented front-end routing, state management, overview pages, part of data viz charts and performance tuning.</p>
+      <a href='http://data.worldbank.org/' target='_blank'>Production website</a>
+    </div>
+  )
+}, {
     title: 'D3 in 20 days',
     href: 'https://github.com/EcutDavid/D3In20Days',
     picture: dv20Pic,
@@ -50,16 +59,6 @@ export default [{
         <p>One of my data visualization practice.</p>
         <p><b>React, D3.js</b></p>
         <a href='https://github.com/EcutDavid/D3In20Days' target='_blank'>Github repo</a>
-      </div>
-    )
-  }, {
-    title: 'Splunk UCC configuration validator',
-    href: 'https://github.com/EcutDavid/splunk-ucc-config-validator',
-    picture: uccValidator,
-    description: (
-      <div>
-        <p>An online application helps Splunk add-on developers saving time from debugging problems caused by errors in configuration.</p>
-        <a href='https://github.com/EcutDavid/splunk-ucc-config-validator' target='_blank'>Github repo</a>
       </div>
     )
   }, {

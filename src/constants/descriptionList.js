@@ -1,8 +1,7 @@
-const CURRENT_POSITION = 'Currently working as a software engineer at Canva.';
-const MAIN_EXPERIENCE = 'Have experience in building websites and single page applications with React, Redux and node.js.'
-const SECOND_EXPERIENCE = 'Built some back-end services in C#, node.js with AWS services.'
+const CURRENT_POSITION = 'Software engineer at Canva.';
+const MAIN_EXPERIENCE = 'Building applications with javascript, TypeScript, C#, and node.js.'
 
-const descriptionList = [{
+export default [{
     text: CURRENT_POSITION,
     meta: {
       tagList: [
@@ -25,13 +24,18 @@ const descriptionList = [{
         },
         {
           tag: 'b',
-          start: MAIN_EXPERIENCE.indexOf('React'),
-          end: MAIN_EXPERIENCE.indexOf('React') + 'React'.length
+          start: MAIN_EXPERIENCE.indexOf('javascript'),
+          end: MAIN_EXPERIENCE.indexOf('javascript') + 'javascript'.length
         },
         {
           tag: 'b',
-          start: MAIN_EXPERIENCE.indexOf('Redux'),
-          end: MAIN_EXPERIENCE.indexOf('Redux') + 'Redux'.length
+          start: MAIN_EXPERIENCE.indexOf('TypeScript'),
+          end: MAIN_EXPERIENCE.indexOf('TypeScript') + 'TypeScript'.length
+        },
+        {
+          tag: 'b',
+          start: MAIN_EXPERIENCE.indexOf('C#'),
+          end: MAIN_EXPERIENCE.indexOf('C#') + 'C#'.length
         },
         {
           tag: 'b',
@@ -42,28 +46,5 @@ const descriptionList = [{
     }
   }, {
     text: 'Enjoy writing clean code and solving complex problems.'
-  }, {
-    text: SECOND_EXPERIENCE,
-    meta: {
-      tagList: [
-        {
-          tag: 'b',
-          start: SECOND_EXPERIENCE.indexOf('C#'),
-          end: SECOND_EXPERIENCE.indexOf('C#') + 'C#'.length
-        },
-        {
-          tag: 'b',
-          start: SECOND_EXPERIENCE.indexOf('node.js'),
-          end: SECOND_EXPERIENCE.indexOf('node.js') + 'node.js'.length
-        },
-        {
-          tag: 'b',
-          start: SECOND_EXPERIENCE.indexOf('AWS services'),
-          end: SECOND_EXPERIENCE.indexOf('AWS services') + 'AWS services'.length
-        }
-      ]
-    }
   }
 ]
-
-export default descriptionList

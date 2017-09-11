@@ -9,9 +9,21 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="Footer " id={CONTACT_ME}>
-        <BLogs />
+        <a
+          className='footer-link'
+          target='_blank'
+          href='https://www.linkedin.com/in/david-guan-64b69b110'
+        >
+          <i className='fa fa-linkedin-square' />
+        </a>
+        <a
+          className='footer-link'
+          target='_blank'
+          href='https://www.reddit.com/user/DavidGuanDev/'
+        >
+          <i className='fa fa-reddit' />
+        </a>
         <a href="mailto:davidguandev@gmail.com">
-          <i className='fa fa-send' />
           davidguandev@gmail.com
         </a>
       </div>
