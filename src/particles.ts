@@ -143,10 +143,14 @@ let visibleWidth = visibleHeight * renderWidth / renderHeight;
 let displayRatio = visibleHeight / renderHeight;
 
 let onReset = false;
+function getRendererWidth() {
+  const width = (document.querySelector(targetSelector) as HTMLElement).offsetWidth;
+  return Math.min(1200, width);
+}
+
 function rebuildParticles() {
   onReset = true;
-  renderWidth = (document.querySelector(targetSelector) as HTMLElement).offsetWidth;
-  renderWidth = Math.min(1200, renderWidth);
+  renderWidth = getRendererWidth();
   renderHeight = (document.querySelector(targetSelector) as HTMLElement).offsetHeight;
   renderer.setSize(renderWidth, renderHeight);
   camera.aspect = renderWidth / renderHeight;
@@ -172,11 +176,11 @@ function reset() {
 
     setTimeout(() => {
       isOnDebounce = false;
+      if (getRendererWidth() === renderWidth) return;
       rebuildParticles();
     }, 1500);
   }
 }
-
 
 function renderingLoop() {
   if (!onReset) {
@@ -184,7 +188,6 @@ function renderingLoop() {
     planes.forEach(d => d.update(rayX, rayY));
   }
   requestAnimationFrame(renderingLoop);
-
 }
 
 let targetSelector: string;
