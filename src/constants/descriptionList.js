@@ -1,4 +1,4 @@
-const CURRENT_POSITION = 'Software engineer at Canva.';
+const CURRENT_POSITION = 'Working at Canva.';
 const MAIN_EXPERIENCE = 'Building applications with javascript, TypeScript, C#, and node.js.'
 
 export default [{

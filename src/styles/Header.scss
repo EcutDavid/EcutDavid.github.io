@@ -1,9 +1,13 @@
 .Header {
-  background: url('../images/heroBanner.png') no-repeat center center/cover;
-  background-size: cover;
+  background: #fff;
   height: 400px;
   position: relative;
   text-align: center;
+
+  .withoutWebGL {
+    background: url('../images/heroBanner.png') no-repeat center center/cover;
+    background-size: cover;
+  }
 
   .mask-layer {
     background-color: #000;

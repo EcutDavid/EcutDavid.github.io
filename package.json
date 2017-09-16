@@ -17,6 +17,7 @@
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
   "devDependencies": {
+    "@types/three": "^0.84.21",
     "autoprefixer": "^6.3.6",
     "babel-eslint": "^6.0.0",
     "babel-loader": "^6.0.0",
@@ -53,6 +54,9 @@
     "react-hot-loader": "^1.2.9",
     "rimraf": "^2.6.1",
     "sass-loader": "^3.1.2",
+    "ts-loader": "^2.3.7",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.12.0"
@@ -68,6 +72,8 @@
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "three": "^0.87.1",
+    "three-obj-loader": "^1.1.2"
   }
 }
