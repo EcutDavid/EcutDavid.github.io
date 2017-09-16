@@ -142,7 +142,9 @@ let visibleHeight = 2 * Math.tan((Math.PI / 180) * camera.fov / 2) * distanceFro
 let visibleWidth = visibleHeight * renderWidth / renderHeight;
 let displayRatio = visibleHeight / renderHeight;
 
+let onReset = false;
 function rebuildParticles() {
+  onReset = true;
   renderWidth = (document.querySelector(targetSelector) as HTMLElement).offsetWidth;
   renderWidth = Math.min(1200, renderWidth);
   renderHeight = (document.querySelector(targetSelector) as HTMLElement).offsetHeight;
@@ -160,6 +162,7 @@ function rebuildParticles() {
   }
   drawText(namePoints, -visibleWidth / 2.6, visibleWidth / 2.6, visibleHeight / 2 - 15);
   drawText(posiPoints, -visibleWidth / 2.5, visibleWidth / 2.5, -5);
+  onReset = false;
 }
 
 let isOnDebounce = false;
@@ -176,10 +179,12 @@ function reset() {
 
 
 function renderingLoop() {
-  renderer.render(scene, camera);
+  if (!onReset) {
+    renderer.render(scene, camera);
+    planes.forEach(d => d.update(rayX, rayY));
+  }
   requestAnimationFrame(renderingLoop);
 
-  planes.forEach(d => d.update(rayX, rayY));
 }
 
 let targetSelector: string;
