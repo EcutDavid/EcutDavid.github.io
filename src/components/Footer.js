@@ -22,6 +22,13 @@ export default class Footer extends Component {
         >
           <i className='fa fa-reddit' />
         </a>
+        <a
+          className='footer-link'
+          target='_blank'
+          href='https://twitter.com/davidguandev'
+        >
+          <i className='fa fa-twitter' />
+        </a>
         <a href="mailto:davidguandev@gmail.com">
           davidguandev@gmail.com
         </a>
