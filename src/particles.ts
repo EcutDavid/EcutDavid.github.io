@@ -118,9 +118,18 @@ const drawText = (text: string, left: number, right: number, top: number) => {
     if (d[1] > maxY) maxY = d[1];
   });
   const scale = (right - left) / (maxX - minX);
-  points.forEach(([x, y]) => {
-    process(left + x * scale, top - y * scale);
-  });
+  let pointer = 0;
+  const renderPoints = () => {
+    const boundary = Math.min(pointer + 100, points.length);
+    for (; pointer < boundary; pointer++) {
+      const [x, y] = points[pointer];
+      process(left + x * scale, top - y * scale);
+    }
+    if(pointer < points.length) {
+      setTimeout(renderPoints, 0);
+    }
+  }
+  renderPoints();
 };
 
 const distanceFromCamera = 100;
