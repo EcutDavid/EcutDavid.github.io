@@ -2,7 +2,6 @@ declare function require(name: string);
 import * as THREE from 'three';
 import * as OBJLoader from 'three-obj-loader';
 const PlaneOBJ = require('./models/plane.obj');
-import textToPoints from './textToPoints.ts';
 
 OBJLoader(THREE);
 const loader: THREE.OBJLoader = new THREE.OBJLoader();
@@ -19,15 +18,20 @@ const isMobile = mobilecheck();
 
 
 const maxSpeed = 12;
+const planeMaterial = new THREE.MeshStandardMaterial({ color: 0x2199e8, side: THREE.DoubleSide });
+const planeGeometry = new THREE.PlaneGeometry(1.3, 1.3);
+planeGeometry.faces.pop();
 class Plane {
   private speedX = 0;
   private speedY = 0;
   private rotateX = 0.05 * Math.random() + 0.01;
   private rotateY = 0.05 * Math.random() + 0.01;
-  private mesh: THREE.Group;
+  private mesh: THREE.Mesh;
 
-  constructor(srcGroup: THREE.Group, private posX: number, private posY: number, rendererWidth: number) {
-    this.mesh = srcGroup.clone();
+
+  constructor(private posX: number, private posY: number, rendererWidth: number) {
+    const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    this.mesh = plane;
 
     this.mesh.rotateX(Math.PI * 2 * Math.random());
     this.mesh.rotateY(Math.PI * 2 * Math.random());
@@ -39,11 +43,6 @@ class Plane {
     this.mesh.position.x = (Math.random() - 0.5) * visibleWidth;
     this.mesh.position.y = (Math.random() - 0.5) * visibleHeight;
 
-    this.mesh.traverse(child => {
-      if (child instanceof THREE.Mesh) {
-        child.material = new THREE.MeshStandardMaterial({ color: 0x2199e8, side: THREE.DoubleSide });
-      }
-    });
     scene.add(this.mesh);
   }
 
@@ -82,11 +81,11 @@ class Plane {
 }
 
 let planes: Plane[] = [];
-let planeTHREEGroup: THREE.Group;
+// The plan mesh
 
 const scene = new THREE.Scene();
 scene.add(new THREE.AmbientLight(0xFFFFFF));
-const light = new THREE.DirectionalLight(0xffffff, .9);
+const light = new THREE.DirectionalLight(0xffffff, .5);
 light.position.set(200, 200, 5);
 scene.add(light);
 const hemisphereLight = new THREE.HemisphereLight(0xaaaaaa, 0x444444, 0.9);
@@ -108,7 +107,7 @@ const drawText = (points: number[][], left: number, right: number, top: number) 
   let maxY = Number.MIN_VALUE;
 
   const process = (x: number, y: number) => {
-    const plane = new Plane(planeTHREEGroup, x, y, renderWidth);
+    const plane = new Plane(x, y, renderWidth);
     planes.push(plane);
   };
 
@@ -195,11 +194,12 @@ export default function render(selector) {
   targetSelector = selector;
   window.addEventListener('resize', reset);
   document.querySelector(selector).appendChild(renderer.domElement);
-  loader.load(
-    PlaneOBJ, object => {
-      planeTHREEGroup = object;
-      rebuildParticles();
-    },
-  );
+  // loader.load(
+  //   PlaneOBJ, object => {
+  //     // There is no model being used, but I still decide to load this model here
+
+  //   },
+  // );
+  rebuildParticles();
   renderingLoop();
 }
