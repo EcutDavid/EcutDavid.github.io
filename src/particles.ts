@@ -164,7 +164,7 @@ function rebuildParticles() {
     planes = [];
   }
   drawText(namePoints, -visibleWidth / 2.6, visibleWidth / 2.6, visibleHeight / 2 - 15);
-  drawText(posiPoints, -visibleWidth / 2.5, visibleWidth / 2.5, -5);
+  setTimeout(() => drawText(posiPoints, -visibleWidth / 2.5, visibleWidth / 2.5, -5), 2500);
   onReset = false;
 }
 

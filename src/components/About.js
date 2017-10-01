@@ -13,7 +13,8 @@ export default class About extends Component {
       descriptionList: DESCRIPTION_LIST.map(({text, meta}) => ({
         meta,
         text: text,
-        pointer: 0
+        // Remove the typing animation
+        pointer: 9999
       }))
     };
   }
