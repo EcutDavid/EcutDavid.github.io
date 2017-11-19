@@ -6,6 +6,7 @@ import xkcd from '../assets/xkcd-r.png'
 import b from '../assets/b.png'
 import webglWrokshop from '../assets/webgl-wrokshop.png'
 import uccValidator from '../assets/ucc-validator.png'
+import photoFilter from '../assets/photo-filter.png'
 
 export default [{
   title: 'webgl-workshop.com',
@@ -20,7 +21,7 @@ export default [{
 },{
     title: 'Photo Filter',
     href: 'http://davidguan.me/photo-filter',
-    picture: 'https://user-images.githubusercontent.com/10692276/30209095-996269d4-94d9-11e7-866f-b0ed77ce30f1.png',
+    picture: photoFilter,
     description: (
       <div>
         <p>An online application allows you filter an image and download the result.</p>
