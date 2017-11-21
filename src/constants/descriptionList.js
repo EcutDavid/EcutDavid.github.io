@@ -1,4 +1,4 @@
-const CURRENT_POSITION = 'Working at Canva.';
+const CURRENT_POSITION = 'Engineer at Canva.';
 const MAIN_EXPERIENCE = 'Building applications with javascript, TypeScript, C#, and node.js.'
 
 export default [{
@@ -45,6 +45,6 @@ export default [{
       ]
     }
   }, {
-    text: 'Enjoy writing clean code and solving complex problems.'
+    text: 'Focusing on front-end development and computer graphics programming.'
   }
 ]
