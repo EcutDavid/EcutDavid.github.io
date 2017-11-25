@@ -2,9 +2,6 @@
   min-height: 520px;
 
   & > a > img {
-    filter: blur(1px);
-    transition: filter 0.5s ease-in-out;
-
     &:hover {
       filter: none;
     }

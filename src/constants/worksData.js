@@ -7,6 +7,7 @@ import b from '../assets/b.png'
 import webglWrokshop from '../assets/webgl-wrokshop.png'
 import uccValidator from '../assets/ucc-validator.png'
 import photoFilter from '../assets/photo-filter.png'
+import invaders from '../assets/invaders.png'
 
 export default [{
   title: 'webgl-workshop.com',
@@ -49,24 +50,15 @@ export default [{
     </div>
   )
 }, {
-    title: 'D3 in 20 days',
-    href: 'https://github.com/EcutDavid/D3In20Days',
-    picture: dv20Pic,
+    title: 'Space Invaders',
+    href: 'https://davidguan.itch.io/space-invaders',
+    picture: invaders,
     description: (
       <div>
-        <p>One of my data visualization practice.</p>
-        <p><b>React, D3.js</b></p>
-        <a href='https://github.com/EcutDavid/D3In20Days' target='_blank'>Github repo</a>
-      </div>
-    )
-  }, {
-    title: 'React native xkcd viewer',
-    href: 'https://github.com/EcutDavid/react-native-xkcdReader',
-    picture: xkcd,
-    description: (
-      <div>
-        <p><b>Golang</b>, <b>React Native</b></p>
-        <a href='https://github.com/EcutDavid/react-native-xkcdReader' target='_blank'>Github repo</a>
+        <p>Yet another space invaders "copy".</p>
+        <a href='https://davidguan.itch.io/space-invaders' target='_blank'>Play on Itch.io</a>
+        <p>-----------</p>
+        <a href='https://github.com/EcutDavid/space-invaders' target='_blank'>Github repo</a>
       </div>
     )
   }
