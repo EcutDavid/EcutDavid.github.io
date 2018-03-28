@@ -1,9 +1,6 @@
 import React from 'react'
 
 import wbPic from '../assets/WB.png'
-import dv20Pic from '../assets/20.png'
-import xkcd from '../assets/xkcd-r.png'
-import b from '../assets/b.png'
 import webglWrokshop from '../assets/webgl-wrokshop.png'
 import uccValidator from '../assets/ucc-validator.png'
 import photoFilter from '../assets/photo-filter.png'
