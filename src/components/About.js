@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { ABOUT_ME } from 'constants/domID'
 import DESCRIPTION_LIST from 'constants/descriptionList'
 import Works from './Works'
+import Articles from './Articles'
 import 'styles/About.scss'
 
 
@@ -143,6 +144,7 @@ export default class About extends Component {
             </a>
           </div>
           <Works />
+          <Articles />
         </div>
       </div>
     )

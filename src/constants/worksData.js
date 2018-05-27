@@ -27,6 +27,18 @@ export default [{
       </div>
     )
   }, {
+    title: 'Space Invaders',
+    href: 'https://davidguan.itch.io/space-invaders',
+    picture: invaders,
+    description: (
+      <div>
+        <p>Yet another space invaders "copy".</p>
+        <a href='https://davidguan.itch.io/space-invaders' target='_blank'>Play on Itch.io</a>
+        <p>-----------</p>
+        <a href='https://github.com/EcutDavid/space-invaders' target='_blank'>Github repo</a>
+      </div>
+    )
+  }, {
     title: 'Splunk UCC configuration validator',
     href: 'https://github.com/EcutDavid/splunk-ucc-config-validator',
     picture: uccValidator,
@@ -46,17 +58,5 @@ export default [{
       <a href='http://data.worldbank.org/' target='_blank'>Production website</a>
     </div>
   )
-}, {
-    title: 'Space Invaders',
-    href: 'https://davidguan.itch.io/space-invaders',
-    picture: invaders,
-    description: (
-      <div>
-        <p>Yet another space invaders "copy".</p>
-        <a href='https://davidguan.itch.io/space-invaders' target='_blank'>Play on Itch.io</a>
-        <p>-----------</p>
-        <a href='https://github.com/EcutDavid/space-invaders' target='_blank'>Github repo</a>
-      </div>
-    )
-  }
+}
 ]

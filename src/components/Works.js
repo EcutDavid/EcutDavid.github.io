@@ -22,14 +22,14 @@ export default class Works extends Component {
     });
     setTimeout(() => {
       this.setState({showActionButton: false});
-    }, 1500);
+    }, 0);
   }
 
   render() {
     const { showAll, showActionButton } = this.state
     return (
       <div id={MY_WORKS}>
-        <h2 className='title'>My Works</h2>
+        <h2 className='title'>Projects</h2>
         <div className='row work-container'>
           {
             data.slice(0, showAll ? 6 : 3).map((d, k) =>
@@ -48,7 +48,7 @@ export default class Works extends Component {
             disabled={showAll ? true : false}
             onClick={() => this.toggleShowAll()}
           >
-            Show More
+            More
           </button>
         )}
       </div>
