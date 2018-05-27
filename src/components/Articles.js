@@ -44,7 +44,7 @@ export default class Articles extends Component {
             <div className='row' key={i}>
                 <div className='columns small-11 small-centered medium-9 medium-centered large-7 large-centered'>
                   <div className="article">
-                    <a className='link'>{d.name}</a>
+                    <a className='link' target='_blank' hreft={d.url}>{d.name}</a>
                     <span className='date'>{getDateDiff(d.date)}</span>
                   </div>
                 </div>
