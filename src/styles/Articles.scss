@@ -3,6 +3,7 @@
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
     .link  {
@@ -12,6 +13,7 @@
     }
     .date  {
       text-align: right;
+      min-width: 70px;
     }
   }
 }
