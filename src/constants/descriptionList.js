@@ -46,6 +46,6 @@ export default [{
     //   ]
     // }
   }, {
-    text: 'Lifelong learner, book lover, competitive programming enthusiast.'
+    text: 'Lifelong learner, book lover and competitive programming enthusiast.'
   }
 ]
