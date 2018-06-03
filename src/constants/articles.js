@@ -1,5 +1,10 @@
 
 export default [{
+  date: 'June 3, 2018',
+  name: 'A bash script that saves me from git -m “I forgot git add”',
+  url: 'https://medium.com/p/434b8af95311?source=user_profile---------2-------------------'
+},
+{
   date: 'May 26, 2018',
   name: 'Participating Google Code Jam(the First Time)',
   url: 'https://medium.com/p/67bba2d6b7f0?source=user_profile---------2-------------------'
