@@ -1,5 +1,4 @@
 const CURRENT_POSITION = 'Engineer at Canva.';
-const MAIN_EXPERIENCE = 'Building applications with javascript, TypeScript, C#, and node.js.'
 
 export default [{
     text: CURRENT_POSITION,
@@ -14,7 +13,7 @@ export default [{
       ]
     }
   }, {
-    text: 'Programming machines to do web and graphics stuff.',
+    text: 'Programming machines to do web and graphics stuff.'
     // text: MAIN_EXPERIENCE,
     // meta: {
     //   tagList: [
