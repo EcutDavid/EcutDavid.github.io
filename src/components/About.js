@@ -100,41 +100,45 @@ export default class About extends Component {
 
   render() {
     return (
-      <div className="About row" id={ABOUT_ME}>
+      <main className="About row" id={ABOUT_ME}>
         <div className='column small-11 small-centered'>
           <div className='row'>
-            <div className='column small-10 small-centered description-list'>
+            <section className='column small-10 small-centered description-list' aria-label='introduction'>
               {
                 this.mapDescriptionList()
               }
-            </div>
+            </section>
           </div>
           <div className='row'>
             <a
+              aria-label="David's Github profile"
               className='column small-6 medium-3 account-container'
               target='_blank'
               href='https://github.com/EcutDavid'
-              >
+            >
               <i className='fa fa-github' />
               Github
             </a>
             <a
+              aria-label="David's Stack overflow profile"
               className='column small-6 medium-3 account-container'
               target='_blank'
               href='http://stackoverflow.com/users/5076405/david-guan'
-              >
+            >
               <i className='fa fa-stack-overflow' />
               Stack overflow
             </a>
             <a
+              aria-label="David's Medium homepage"
               className='column small-6 medium-3 account-container'
               target='_blank'
               href='https://medium.com/@davidguandev'
-              >
+            >
               <i className='fa fa-medium' />
               Medium
             </a>
             <a
+              aria-label="David's Youtube channel"
               className='column small-6 medium-3 account-container'
               target='_blank'
               href='https://www.youtube.com/channel/UCxSyYbODJF3ULNMoRwxjJbg'
@@ -146,7 +150,7 @@ export default class About extends Component {
           <Works />
           <Articles />
         </div>
-      </div>
+      </main>
     )
   }
 }

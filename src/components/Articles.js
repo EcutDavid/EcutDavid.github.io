@@ -41,14 +41,14 @@ export default class Articles extends Component {
         <div className='content'>
         {
           data.slice(0, showAll ? Number.MAX_VALUE : 5).map((d, i) =>
-            <div className='row' key={i}>
+            <article className='row' key={i} aria-label={`${d.name}, ${getDateDiff(d.date)}`}>
                 <div className='columns small-11 small-centered medium-9 medium-centered large-7 large-centered'>
                   <div className="article">
-                    <a className='link' target='_blank' href={d.url}>{d.name}</a>
+                    <h3><a className='link' target='_blank' href={d.url}>{d.name}</a></h3>
                     <span className='date'>{getDateDiff(d.date)}</span>
                   </div>
                 </div>
-            </div>
+            </article>
           )
         }
         </div>
@@ -58,7 +58,7 @@ export default class Articles extends Component {
             disabled={showAll ? true : false}
             onClick={() => this.toggleShowAll()}
           >
-            More
+            Display more articles
           </button>
         )}
       </div>

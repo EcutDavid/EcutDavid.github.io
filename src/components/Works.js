@@ -9,8 +9,8 @@ export default class Works extends Component {
   constructor() {
     super()
     this.state={
-      showActionButton: true,
-      showAll: false
+      // Just have 5 projects for now, no need for the toggle button.
+      showAll: true
     }
   }
 
@@ -20,13 +20,10 @@ export default class Works extends Component {
     this.setState({
       showAll: !showAll
     });
-    setTimeout(() => {
-      this.setState({showActionButton: false});
-    }, 0);
   }
 
   render() {
-    const { showAll, showActionButton } = this.state
+    const { showAll } = this.state
     return (
       <div id={MY_WORKS}>
         <h2 className='title'>Projects</h2>
@@ -42,7 +39,7 @@ export default class Works extends Component {
             )
           }
         </div>
-        {showActionButton && (
+        {!showAll && (
           <button
             className={`button action-button ${showAll ? 'hide-button' : ''}`}
             disabled={showAll ? true : false}

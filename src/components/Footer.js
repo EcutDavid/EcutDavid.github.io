@@ -7,8 +7,9 @@ import 'styles/Footer.scss'
 export default class Footer extends Component {
   render() {
     return (
-      <div className="Footer " id={CONTACT_ME}>
+      <footer className="Footer" id={CONTACT_ME}>
         <a
+          aria-label="David's linkedin profile"
           className='footer-link'
           target='_blank'
           href='https://www.linkedin.com/in/david-guan-64b69b110'
@@ -16,23 +17,22 @@ export default class Footer extends Component {
           <i className='fa fa-linkedin-square' />
         </a>
         <a
-          className='footer-link'
-          target='_blank'
-          href='https://www.reddit.com/user/DavidGuanDev/'
-        >
-          <i className='fa fa-reddit' />
-        </a>
-        <a
+          aria-label="David's twitter profile"
           className='footer-link'
           target='_blank'
           href='https://twitter.com/davidguandev'
         >
           <i className='fa fa-twitter' />
         </a>
-        <a href="mailto:davidguandev@gmail.com">
+        <br />
+        <a
+          aria-label="Send a email to David"
+          className="mail"
+          href="mailto:davidguandev@gmail.com"
+        >
           davidguandev@gmail.com
         </a>
-      </div>
+      </footer>
     )
   }
 }

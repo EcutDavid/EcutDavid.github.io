@@ -19,16 +19,17 @@ export default class Work extends Component {
   }
 
   render() {
-    const { title, picture, description, className, index, isIframe, src, href } = this.props
+    const { title, picture, description, className, index, isIframe, src, pictureAlt } = this.props
     const { pageLoaded } = this.state;
 
     return (
-      <div className={className} style={index === 5 ? { float: 'right' } : {}}>
+      <section
+        aria-label={`Project ${title}`}
+        className={className} style={index === 5 ? { float: 'right' } : {}}
+      >
         {
           !isIframe ?(
-            <a href={href} target='_blank'>
-              <img className='img thumbnail' src={picture} />
-            </a>
+            <img className='img thumbnail' src={picture} alt={pictureAlt} />
           ) : (
             <iframe
               className='img thumbnail'
@@ -39,9 +40,9 @@ export default class Work extends Component {
             />
           )
         }
-        <h5>{ title }</h5>
+        <h3 aria-label={`Project ${title}`}>{ title }</h3>
         { description }
-      </div>
+      </section>
     )
   }
 }

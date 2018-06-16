@@ -1,20 +1,23 @@
 @import 'node_modules/foundation-sites/scss/foundation';
 
 .Footer {
-  background-color: #0F95E8;
+  background-color: #3F51B5;
   min-height: 60px;
   margin-top: 20px;
   padding-top: 15px;
   text-align: center;
 
   &>a {
-    padding: 5px 0 20px;
+    margin: 5px 0 20px;
     color: #fff;
     display: block;
     font-size: 1.5em;
     text-align: center;
-    transition: color 2s;
-    outline: 0;
+    transition: color 0.5s;
+
+    &:focus {
+      outline-color: white;
+    }
 
     &:hover {
       color: skyblue;
@@ -26,8 +29,8 @@
   }
 
   .mail {
-    font-size: 15px;
-    text-align: center;
+    display: inline-block;
+    font-size: 20px;
     color: #fff;
   }
 
