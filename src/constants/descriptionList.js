@@ -8,7 +8,7 @@ export default [{
           tag: 'a',
           start: CURRENT_POSITION.indexOf('Canva'),
           end: CURRENT_POSITION.indexOf('Canva') + 'Canva'.length,
-          attributes: 'href="https://www.canva.com/" target="_blank"'
+          attributes: 'href="https://www.canva.com/" target="_blank" aria-label="canva, a company that provides graphic-design tools."'
         }
       ]
     }
