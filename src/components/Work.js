@@ -8,14 +8,14 @@ export default class Work extends Component {
   }
 
   componentDidMount() {
-    const setPageLoaded = () => setTimeout(() => {
-      this.setState({ pageLoaded: true });
-    }, 1300)
+    // const setPageLoaded = () => setTimeout(() => {
+    //   this.setState({ pageLoaded: true });
+    // }, 1300)
 
-    window.onload = () => {
-      setPageLoaded();
-    }
-    setPageLoaded();
+    // window.onload = () => {
+    //   setPageLoaded();
+    // }
+    // setPageLoaded();
   }
 
   render() {

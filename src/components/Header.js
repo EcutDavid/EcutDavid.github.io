@@ -8,7 +8,9 @@ const hasWebGL = !!window.WebGLRenderingContext;
 
 class Header extends Component {
   componentDidMount() {
-    hasWebGL && renderParticles('#header');
+    setTimeout(() => {
+      hasWebGL && renderParticles('#header');
+    }, 600);
   }
 
   componentWillUnmount() {
