@@ -1,7 +1,6 @@
 'use strict'
 const path = require('path')
 const srcPath = path.join(__dirname, '/../src')
-const dfltPort = process.env.PORT || 8000
 function getDefaultModules() {
   return {
     preLoaders: [{
@@ -33,6 +32,6 @@ function getDefaultModules() {
 module.exports = {
   srcPath: srcPath,
   publicPath: '/assets/',
-  port: dfltPort,
+  port: process.env.PORT || 8000,
   getDefaultModules: getDefaultModules
 }
