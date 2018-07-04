@@ -25,7 +25,6 @@ self.addEventListener('fetch', function (event) {
     return;
   }
 
-  // Only return what's being fetched for now
   if (fetch) {
     event.respondWith(
       caches.match(event.request).then(function (response) {
