@@ -25,11 +25,16 @@ self.addEventListener('fetch', function (event) {
     return;
   }
 
-  // if (fetch) {
-  //   event.respondWith(
-  //     caches.match(event.request).then(function (response) {
-  //       return response || fetch(event.request);
-  //     })
-  //   );
-  // }
+  if (fetch) {
+    event.respondWith(
+      fetch(event.request).catch(function () {
+
+        console.log('network is in offline state, trying to providing cached offline content for:', event.request.url);
+        // Only use cache as a fallback
+        return caches.match(event.request).then(function (response) {
+          return response;
+        })
+      })
+    );
+  }
 });
