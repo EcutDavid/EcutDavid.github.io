@@ -1,6 +1,6 @@
 self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open('v1').then(function (cache) {
+    caches.open('v2').then(function (cache) {
       return cache.addAll([
         '/',
         '/assets/136133c6ea2e29e457cea61fbbc06ad3.png',
