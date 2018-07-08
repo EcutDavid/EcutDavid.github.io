@@ -39,4 +39,24 @@
     margin: 0 15px;
     display: inline-block;
   }
+
+  .snack-bar {
+    text-align: center;
+    padding: 10px 15px;
+    position: fixed;
+    bottom: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    left: calc(50% - 150px);
+    background: #323232;
+    color: #fff;
+    border-radius: 8px;
+    transition: opacity 1s;
+    opacity: 0;
+    p {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
 }
