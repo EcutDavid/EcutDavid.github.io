@@ -31,9 +31,7 @@ self.addEventListener('fetch', function (event) {
         console.log('network is in offline state, trying to providing cached offline content for:', event.request.url);
         // Only use cache as a fallback
         return caches.open('v2').then(cache => {
-          return cache.match(event.request).then(response => {
-            return response;
-          })
+          return cache.match(event.request);
         });
       })
     );
