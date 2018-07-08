@@ -8,6 +8,8 @@ import 'normalize.css/normalize.css'
 import 'font-awesome/css/font-awesome.min.css'
 import 'styles/App.scss'
 
+const snackBar = document.querySelector('.snack-bar');
+
 function toggleSnackBar() {
   setTimeout(() => {
     snackBar.style.opacity = 1;
@@ -37,4 +39,3 @@ if ('serviceWorker' in navigator) {
 
 // Render the main component into the dom
 ReactDOM.render(<App />, document.getElementById('app'))
-const snackBar = document.querySelector('.snack-bar');
