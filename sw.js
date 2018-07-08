@@ -44,5 +44,7 @@ self.addEventListener('activate', function (event) {
   // to set itself as the controller for all clients within its scope.
   // This triggers a "controllerchange" event on navigator.serviceWorker
   // in any clients that become controlled by this service worker.
-  event.waitUntil(self.clients.claim());
+  if (self.clients && self.clients.claim) {
+    event.waitUntil(self.clients.claim());
+  }
 });
