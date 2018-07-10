@@ -34,5 +34,10 @@
 
       ga('create', 'UA-91616242-1', 'auto');
       ga('send', 'pageview');
+
+      setTimeout(function() {
+        var snackBar = document.querySelector('.snack-bar');
+        snackBar.remove();
+      }, 15000);
     </script>
 </html>
