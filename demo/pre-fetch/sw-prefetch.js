@@ -3,7 +3,7 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
       return cache.addAll([
-        '/demo/pre-fetch',
+        '/demo/pre-fetch'
       ]);
     })
   );
