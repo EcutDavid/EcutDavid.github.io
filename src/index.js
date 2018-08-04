@@ -8,13 +8,17 @@ import 'normalize.css/normalize.css'
 import 'font-awesome/css/font-awesome.min.css'
 import 'styles/App.scss'
 
-const snackBar = document.querySelector('.snack-bar');
-
 function toggleSnackBar() {
+  const snackBar = document.querySelector('.snack-bar');
   setTimeout(() => {
-    snackBar.style.opacity = 1;
+    snackBar.style.display = 'block';
+    // wait a while so the transition can be there.
+    setTimeout(() => snackBar.style.opacity = 1, 200);
     setTimeout(() => {
       snackBar.style.opacity = 0;
+      setTimeout(() => {
+        snackBar.style.display = 'none';
+      }, 1000);
     }, 10000)
   }, 3000);
 }

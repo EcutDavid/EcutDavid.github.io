@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canva</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    navigator.serviceWorker.register('./canva-offline-sw.js');
+  </script>
+  <img src="./canva.png" />
+</body>
+</html>
