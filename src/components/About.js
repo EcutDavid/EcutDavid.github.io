@@ -101,15 +101,15 @@ export default class About extends Component {
   render() {
     return (
       <main className="About row" id={ABOUT_ME}>
-        <div className='column small-11 small-centered'>
-          <div className='row'>
-            <section className='column small-10 small-centered description-list' aria-label='introduction'>
+        <div>
+          <div className="flex-container">
+            <section className='column small-10 description-list' aria-label='introduction'>
               {
                 this.mapDescriptionList()
               }
             </section>
           </div>
-          <div className='row'>
+          <div className="flex-container">
             <a
               aria-label="David's Github profile"
               className='column small-6 medium-3 account-container'

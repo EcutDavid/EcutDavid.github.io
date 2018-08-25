@@ -26,6 +26,7 @@ function toggleSnackBar() {
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js')
     .catch(function (error) {
+      // eslint-disable-next-line
       console.log('Service worker registration failed with ' + error);
     });
 

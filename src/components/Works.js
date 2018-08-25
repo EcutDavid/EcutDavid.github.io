@@ -27,7 +27,7 @@ export default class Works extends Component {
     return (
       <div id={MY_WORKS}>
         <h2 className='title'>Projects</h2>
-        <div className='row work-container'>
+        <div className='flex-container work-container'>
           {
             data.slice(0, showAll ? 6 : 3).map((d, k) =>
               <Work
