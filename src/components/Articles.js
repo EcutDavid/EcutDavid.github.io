@@ -42,7 +42,7 @@ export default class Articles extends Component {
         {
           data.slice(0, showAll ? Number.MAX_VALUE : 5).map((d, i) =>
             <article className='flex-container' key={i} aria-label={`${d.name}, ${getDateDiff(d.date)}`}>
-                <div className='columns small-11 small-centered medium-9 medium-centered large-7 large-centered'>
+                <div className='small-11 small-centered medium-9 large-7'>
                   <div className="article">
                     <h3><a className='link' target='_blank' href={d.url}>{d.name}</a></h3>
                     <span className='date'>{getDateDiff(d.date)}</span>

@@ -10,7 +10,7 @@ self.addEventListener('install', function (event) {
         '/assets/674f50d287a8c48dc19ba404d20fe713.eot',
         '/assets/912ec66d7572ff821749319396470bde.svg',
         '/assets/af7ae505a9eed503f8b8e6982036873e.woff2',
-        '/assets/app8742a1cb0da92d275bd9.js',
+        '/assets/appf3840e443d8c83fc915b.js',
         '/assets/b06871f281fee6b241d60582ae9369b9.ttf',
         '/assets/bac1b84f104982bf6441cabc14a05d43.png',
         '/assets/bf46dd512e3a7355ccbfc99204618dc6.png',

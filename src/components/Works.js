@@ -33,7 +33,7 @@ export default class Works extends Component {
               <Work
                 {...d}
                 key={k}
-                className={`column work small-12 medium-6 large-4 ${(!showAll && k == 2) ? 'medium-centered large-uncentered' : ''}`}
+                className='column work medium-6 large-4'
                 index={k}
               />
             )

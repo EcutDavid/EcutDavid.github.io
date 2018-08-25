@@ -5,6 +5,9 @@
 h1, h2, h3, h4, h5 {
   cursor: default;
   color: darkslategrey;
+  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1 {
@@ -150,4 +153,14 @@ p {
       width: 33%;
     }
   }
+}
+
+.thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border: 4px solid #fefefe;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px hsla(0,0%,4%,.2);
+  line-height: 0;
 }
