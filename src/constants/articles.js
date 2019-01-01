@@ -1,5 +1,9 @@
 
 export default [{
+  date: 'Jan 1, 2019',
+  url: 'https://medium.com/p/8f2c498fcc7e',
+  name: '2018 Year in Review'
+}, {
   date: 'Dec 22, 2018',
   url: 'https://medium.com/p/1ef024e85c22',
   name: 'AOC 2018 Day 20: A Regular Map'
