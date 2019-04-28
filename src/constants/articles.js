@@ -1,5 +1,11 @@
 export default [
   {
+    date: "Apr 2019",
+    url:
+      "https://medium.com/@davidguandev/reversing-string-that-contains-emojis-in-javascript-and-c-2d2979d28e26",
+    name: "Reversing String That Contains Emojis in Javascript and C++"
+  },
+  {
     date: "Jan 2019",
     url: "https://medium.com/p/8f2c498fcc7e",
     name: "2018 Year in Review"
@@ -11,12 +17,12 @@ export default [
   },
   {
     date: "June 2018",
-    name: "Fixed a bunch of accessibility issues for my website(and how)",
+    name: "Fixed a Bunch of Accessibility Issues for My Website(And How)",
     url: "https://medium.com/p/bbaac48d314f"
   },
   {
     date: "June 2018",
-    name: "A bash script that saves me from git -m “I forgot git add”",
+    name: "A Bash Script That Saves Me from git -m “I forgot git add”",
     url: "https://medium.com/p/434b8af95311"
   },
   {

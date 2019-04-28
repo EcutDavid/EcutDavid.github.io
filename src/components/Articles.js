@@ -17,8 +17,8 @@ export default class Articles extends Component {
   constructor() {
     super();
     this.state = {
-      showActionButton: true,
-      showAll: false
+      showActionButton: false,
+      showAll: true
     };
   }
 
