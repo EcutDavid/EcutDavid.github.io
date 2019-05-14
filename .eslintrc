@@ -1,7 +1,5 @@
 {
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -18,7 +16,6 @@
   },
   "rules": {
     "comma-dangle": 1,
-    "quotes": [ 1, "single" ],
     "no-undef": 1,
     "global-strict": 0,
     "no-extra-semi": 1,

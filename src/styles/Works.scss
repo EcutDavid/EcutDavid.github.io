@@ -10,13 +10,17 @@
       width: 400px;
     }
   }
-  >div {
+  > div {
     clear: none !important;
   }
   h5 {
     cursor: default;
     font-weight: bold;
   }
+  .description {
+    margin-bottom: 10px;
+  }
+
   @media screen and (min-width: 40em) {
     & > div:last-child:not(:first-child) {
       float: none;
