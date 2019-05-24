@@ -98,7 +98,7 @@
 }
 
 [dir] .src-pages-design_button-iframe_view-iframe_view__container {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 [dir=ltr] .src-pages-design_button-iframe_view-iframe_view__container {
@@ -116,10 +116,6 @@
     top: 5px;
     width: 40px;
     height: 40px;
-}
-
-[dir] .src-pages-design_button-iframe_view-iframe_view__closeButton {
-    cursor: pointer;
 }
 
 [dir=ltr] .src-pages-design_button-iframe_view-iframe_view__closeButton {
@@ -150,6 +146,10 @@
 .src-pages-design_button-iframe_view-iframe_view__iframeLoaded {
     display: block;
     opacity: 1;
+}
+
+[dir] .src-pages-design_button-iframe_view-iframe_view__iframeLoaded {
+    background-color: rgb(255, 255, 255);
 }
 
 .src-pages-design_button-iframe_view-iframe_view__loadingIcon {
@@ -190,7 +190,7 @@
  * design button
  */
 
-/* TODO(Benji): We disabled importing the Open Sans for now as there's no good way to only import 
+/* TODO(Benji): We disabled importing the Open Sans for now as there's no good way to only import
  * The part we needed
  */
 /* From ui/base/fonts/fonts.css */
