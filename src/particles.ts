@@ -91,8 +91,9 @@ document.addEventListener('mousemove', onDocumentMouseMove);
 let rayX = 99999;
 let rayY = 99999;
 function onDocumentMouseMove(evt: MouseEvent) {
+  const yInc = window.scrollY ? window.scrollY : 0;
   rayX = (evt.clientX - renderer.domElement.offsetLeft) * displayRatio - visibleWidth / 2;
-  rayY = -((evt.clientY - renderer.domElement.offsetTop) * displayRatio - visibleHeight / 2);
+  rayY = -((evt.clientY + yInc - renderer.domElement.offsetTop) * displayRatio - visibleHeight / 2);
 }
 
 const drawText = (points: number[][], left: number, right: number, top: number) => {
