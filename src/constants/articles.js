@@ -1,5 +1,11 @@
 export default [
   {
+    date: "Aug 2019",
+    url:
+      "https://medium.com/@davidguandev/build-a-voice-notes-app-part-1-text-to-speech-pipeline-afde7e42da63",
+    name: "Build a Voice Notes App — Part 1, Text to Speech Pipeline"
+  },
+  {
     date: "Apr 2019",
     url:
       "https://medium.com/@davidguandev/reversing-string-that-contains-emojis-in-javascript-and-c-2d2979d28e26",
