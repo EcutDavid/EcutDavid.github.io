@@ -1,5 +1,11 @@
 export default [
   {
+    date: "Oct 2019",
+    url:
+      "https://medium.com/@davidguandev/build-a-voice-notes-app-part-2-user-system-5aa58594469e",
+    name: "Build a Voice Notes App — Part 2, User System"
+  },
+  {
     date: "Aug 2019",
     url:
       "https://medium.com/@davidguandev/build-a-voice-notes-app-part-1-text-to-speech-pipeline-afde7e42da63",
