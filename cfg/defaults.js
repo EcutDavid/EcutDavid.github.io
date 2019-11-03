@@ -1,6 +1,7 @@
 'use strict'
 const path = require('path')
 const srcPath = path.join(__dirname, '/../src')
+let HtmlWebpackPlugin = require('html-webpack-plugin')
 function getDefaultModules() {
   return {
     preLoaders: [{
@@ -31,7 +32,14 @@ function getDefaultModules() {
 }
 module.exports = {
   srcPath: srcPath,
-  publicPath: '/assets/',
+  publicPath: "/assets/",
   port: process.env.PORT || 8000,
-  getDefaultModules: getDefaultModules
-}
+  getDefaultModules: getDefaultModules,
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      filename: "../index.html",
+      template: "src/index.template.html"
+    })
+  ]
+};

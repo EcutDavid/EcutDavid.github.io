@@ -11,14 +11,6 @@ module.exports = {
     filename: process.env.REACT_WEBPACK_ENV === 'dist' ? 'app[hash].js' : 'app.js',
     publicPath: `.${defaultSettings.publicPath}`
   },
-  devServer: {
-    contentBase: './src/',
-    historyApiFallback: true,
-    hot: true,
-    port: defaultSettings.port,
-    publicPath: defaultSettings.publicPath,
-    noInfo: false
-  },
   resolve: {
     modulesDirectories: [
       'src',

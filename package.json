@@ -14,7 +14,7 @@
     "posttest": "npm run lint",
     "serve": "node devServer.js --env=dev",
     "serve:dist": "node devServer.js --env=dist",
-    "start": "node devServer.js --env=dev",
+    "start": "webpack --watch",
     "test": "karma start",
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
@@ -54,7 +54,6 @@
     "postcss-loader": "^0.8.0",
     "precss": "^1.4.0",
     "react-addons-test-utils": "^15.0.0",
-    "react-hot-loader": "^3.0.0",
     "rimraf": "^2.6.1",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.1",

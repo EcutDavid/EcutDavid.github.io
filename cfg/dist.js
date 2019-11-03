@@ -6,30 +6,22 @@ let webpack = require('webpack')
 let baseConfig = require('./base')
 let defaultSettings = require('./defaults')
 
-// Add needed plugins here
-let HtmlWebpackPlugin = require('html-webpack-plugin')
-
 let config = Object.assign({}, baseConfig, {
-  entry: path.join(__dirname, '../src/index'),
+  entry: path.join(__dirname, "../src/index"),
   cache: false,
-  devtool: 'sourcemap',
-  plugins: [
+  devtool: "sourcemap",
+  plugins: defaultSettings.plugins.concat([
     new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': '"production"'
+      "process.env.NODE_ENV": '"production"'
     }),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      hash: true,
-      filename: '../index.html',
-      template: 'src/index.template.html'
-    })
-  ],
+    new webpack.NoErrorsPlugin()
+  ]),
   module: defaultSettings.getDefaultModules()
-})
+});
 
 // Add needed loaders to the defaults here
 config.module.loaders.push({
