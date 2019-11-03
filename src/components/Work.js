@@ -4,17 +4,6 @@ import "styles/Work.scss";
 export default class Work extends Component {
   constructor() {
     super();
-    this.state = { pageLoaded: false };
-  }
-
-  componentDidMount() {
-    // const setPageLoaded = () => setTimeout(() => {
-    //   this.setState({ pageLoaded: true });
-    // }, 1300)
-    // window.onload = () => {
-    //   setPageLoaded();
-    // }
-    // setPageLoaded();
   }
 
   render() {
@@ -25,10 +14,8 @@ export default class Work extends Component {
       className,
       index,
       isIframe,
-      src,
       pictureAlt
     } = this.props;
-    const { pageLoaded } = this.state;
 
     return (
       <section
@@ -44,7 +31,6 @@ export default class Work extends Component {
             width="300"
             height="300"
             scrolling="no"
-            src={pageLoaded ? src : ""}
           />
         )}
         <h3 aria-label={`Project ${title}`}>{title}</h3>

@@ -26,7 +26,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
         include: [].concat(
-          baseConfig.additionalPaths,
           [
             path.join(__dirname, '/../src'),
             path.join(__dirname, '/../test')

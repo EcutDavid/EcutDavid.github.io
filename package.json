@@ -1,5 +1,5 @@
 {
-  "name": "personalSite",
+  "name": "davidg-protfolio",
   "private": true,
   "version": "0.0.1",
   "main": "",
@@ -19,7 +19,7 @@
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
   "devDependencies": {
-    "@types/three": "^0.84.21",
+    "@types/three": "0.84.21",
     "autoprefixer": "^6.3.6",
     "babel-eslint": "^6.0.0",
     "babel-loader": "^6.0.0",
@@ -32,6 +32,7 @@
     "css-loader": "^0.23.0",
     "eslint": "^2.2.0",
     "eslint-loader": "^1.0.0",
+    "html-webpack-plugin": "^2.17.0",
     "eslint-plugin-react": "^7.4.0",
     "file-loader": "^0.8.4",
     "glob": "^7.0.0",
@@ -56,9 +57,10 @@
     "react-hot-loader": "^3.0.0",
     "rimraf": "^2.6.1",
     "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.1",
     "ts-loader": "^2.3.7",
     "tslint": "^5.7.0",
-    "typescript": "^2.5.2",
+    "typescript": "2.5.2",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.12.0"
@@ -67,13 +69,9 @@
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "core-js": "^2.0.0",
     "font-awesome": "^4.6.1",
-    "html-webpack-plugin": "^2.17.0",
-    "motion-ui": "^1.2.2",
     "normalize.css": "^4.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "style-loader": "^0.13.1",
-    "three": "^0.87.1",
-    "three-obj-loader": "^1.1.2"
+    "three": "^0.87.1"
   }
 }

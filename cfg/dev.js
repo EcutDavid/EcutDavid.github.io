@@ -25,7 +25,6 @@ config.module.loaders.push({
   test: /\.(js|jsx)$/,
   loader: 'react-hot-loader/webpack!babel-loader',
   include: [].concat(
-    config.additionalPaths,
     [ path.join(__dirname, '/../src') ]
   )
 })

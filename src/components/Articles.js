@@ -4,15 +4,6 @@ import data from "constants/articles";
 import { ARTICLES } from "constants/domID";
 import "styles/Articles.scss";
 
-const DATE_NOW = new Date(Date.now());
-function getDateDiff(oldDate) {
-  const date1 = new Date(oldDate);
-  const timeDiff = Math.abs(DATE_NOW.getTime() - date1.getTime());
-  const days = Math.ceil(timeDiff / (1000 * 3600 * 24));
-
-  return `${days} day${days > 1 ? "s" : ""} ago`;
-}
-
 export default class Articles extends Component {
   constructor() {
     super();
