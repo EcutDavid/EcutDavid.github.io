@@ -1,5 +1,10 @@
 export default [
   {
+    date: "Jan 2020",
+    url: "https://medium.com/@davidguandev/2019-year-in-review-d4580d38cd3a",
+    name: "2019 Year in Review"
+  },
+  {
     date: "Oct 2019",
     url:
       "https://medium.com/@davidguandev/build-a-voice-notes-app-part-2-user-system-5aa58594469e",
