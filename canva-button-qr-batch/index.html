@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canva Button QR Batch DEMO</title>
+  <link rel="stylesheet" href="https://gist.githubusercontent.com/DavidWells/18e73022e723037a50d6/raw/ead7e72d11c847ad9b81f094686543522101c278/reset.css">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+  <div id="qrContaienr" style="display:none"></div>
+  <div id="step1">
+    <p>20 item at most</p>
+    <textarea id="urlsInput" cols="30" rows="10">
+    </textarea>
+    <button id="confirmUrls">Confirm</button>
+  </div>
+  <div id="step2" style="display: none;">
+  </div>
+  <div id="step3">
+    <div class="drawContainer">
+      <img src="" id="drawer" draggable="false">
+      <div id="boxIndicator"></div>
+      <button id="readyToBatch" style="display:none">Confirm</button>
+    </div>
+  </div>
+  <div id="step4"></div>
+  <script src="https://sdk.canva.com/v2/beta/api.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
