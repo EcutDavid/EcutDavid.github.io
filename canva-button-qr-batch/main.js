@@ -47,8 +47,7 @@ function parseQrContents() {
   return urlsInput.value
     .split("\n")
     .map(d => d.trim())
-    .filter(d => !!d)
-    .slice(0, 30); // In case the client side cannot handle too much stuff
+    .filter(d => !!d);
 }
 
 confirmUrlsButton.addEventListener("click", () => {
