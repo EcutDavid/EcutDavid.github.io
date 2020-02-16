@@ -57,7 +57,7 @@ for (let i = 1; i <= 4; i++) steps.push(document.querySelector(`#step${i}`));
 
 function createPoster() {
   Canva.DesignButton.initialize({
-    apiKey: '9ORhaZJ_12GZlop7jnoCWfiB',
+    apiKey: 'PS2niACLJW8v8wQBtgB3c85o',
     container: steps[1]
   }).then(api => {
     api.createDesign({
@@ -108,7 +108,7 @@ function batchProcess(exportUrl) {
   }
 
   drawer.onload = () => {
-    document.body.addEventListener('mouseup', ev => {
+    document.body.addEventListener('mouseup', () => {
       if (drawing) {
         confirm();
       }
