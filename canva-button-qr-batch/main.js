@@ -47,7 +47,8 @@ function parseQrContents() {
   return urlsInput.value
     .split("\n")
     .map(d => d.trim())
-    .filter(d => !!d);
+    .filter(d => !!d)
+    .slice(0, 30); // In case the client side cannot handle too much stuff
 }
 
 confirmUrlsButton.addEventListener("click", () => {
@@ -157,11 +158,13 @@ function batchProcess(imgDimensions, boxPos) {
       } else {
         zip.generateAsync({ type: "blob" }).then((content) => {
           document.querySelector("#processDescription").style.display = "none";
+          document.querySelector("#downloadZip").style.display = "inline-block";
+          document.querySelector("#restart").style.display = "inline-block";
           document.querySelector("#downloadZip").addEventListener("click", () => {
             saveAs(content, "images.zip");
           });
           document.querySelector("#restart").addEventListener("click", () => {
-            showStep(0);
+            location.href = location.href;
           });
         });
       }

@@ -13,7 +13,7 @@
 <body>
   <div id="qrContaienr" style="display:none"></div>
   <div id="step1">
-    <p>20 item at most</p>
+    <p>Each line of text will be embedded into QR code in the coming steps, 30 items at most.</p>
     <textarea id="urlsInput">
     </textarea>
     <button id="confirmUrls">Confirm</button>
@@ -21,6 +21,7 @@
   <div id="step2" style="display: none">
   </div>
   <div id="step3" style="display: none">
+    <p>Draw a square on the image via clicking a point then release the mouse at another point, the square will be displayed.</p>
     <button id="readyToBatch" style="display:none">Confirm</button>
     <div class="drawContainer">
       <img src="" id="drawer" draggable="false">
@@ -29,8 +30,8 @@
   </div>
   <div id="step4" style="display: none">
     <h2 id="processDescription">Processing, the zip file will be ready soon.</h2>
-    <button id="downloadZip">Download the zip file</button>
-    <button id="restart">Restart</button>
+    <button id="downloadZip" style="display: none">Download the zip file</button>
+    <button id="restart" style="display: none">Restart</button>
   </div>
   <script src="https://sdk.canva.com/v2/beta/api.js"></script>
   <script src="./main.js"></script>
