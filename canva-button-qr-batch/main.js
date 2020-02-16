@@ -24,25 +24,25 @@ class QrGenerator {
   }
 }
 
+const qrGenerator = new QrGenerator();
+const zip = new JSZip();
+const urlsInput = document.querySelector("#urlsInput");
+urlsInput.textContent = "https://google.com\nhttps://canva.com";
+const drawer = document.querySelector("#drawer");
+// Otherwise, we would have trouble getting the raw data from the canvas.
+drawer.setAttribute("crossorigin", "anonymous");
+const confirmUrlsButton = document.querySelector("#confirmUrls");
+let qrContents = [];
+
+urlsInput.addEventListener("keyup", () => {
+  confirmUrlsButton.disabled = parseQrContents().length === 0;
+});
+
 function showStep(index) {
   steps.forEach(s => (s.style.display = "none"));
   steps[index].style.display = "block";
 }
 
-const qrGenerator = new QrGenerator();
-const zip = new JSZip();
-
-const urlsInput = document.querySelector("#urlsInput");
-const confirmUrlsButton = document.querySelector("#confirmUrls");
-const drawer = document.querySelector("#drawer");
-// Otherwise, we would have trouble getting the raw data from the canvas.
-drawer.setAttribute("crossorigin", "anonymous");
-let qrContents = [];
-urlsInput.textContent = "https://google.com\nhttps://canva.com";
-
-urlsInput.addEventListener("keyup", () => {
-  confirmUrlsButton.disabled = parseQrContents().length === 0;
-});
 function parseQrContents() {
   return urlsInput.value
     .split("\n")
@@ -87,7 +87,7 @@ function drawBox(exportUrl) {
     batchProcess(imgDimensions, boxPos);
   });
 
-  function draw() {
+  function drawBox() {
     const length = Math.min(
       Math.abs(pointA.x - pointB.x),
       Math.abs(pointA.y - pointB.y)
@@ -109,16 +109,12 @@ function drawBox(exportUrl) {
     boxPos = { x: leftTop.x, y: leftTop.y, length };
   }
 
-  function toggleConfirmButton() {
-    readyToBatch.style.display = okayToConfirm ? "inline-block" : "none";
-  }
-
   drawer.onload = () => {
     imgDimensions = { width: drawer.clientWidth, height: drawer.clientHeight };
     document.body.addEventListener("mouseup", () => {
-      if (drawing) {
-        toggleConfirmButton();
-      }
+      if (!drawing) return;
+
+      readyToBatch.style.display = okayToConfirm ? "inline-block" : "none";
       drawing = false;
     });
 
@@ -133,7 +129,7 @@ function drawBox(exportUrl) {
 
     drawer.addEventListener("mousemove", e => {
       pointB = { x: e.offsetX, y: e.offsetY };
-      if (drawing) draw();
+      if (drawing) drawBox();
     });
   };
 }
@@ -148,26 +144,26 @@ function batchProcess(imgDimensions, boxPos) {
   function process(index) {
     qrGenerator.generate(qrContents[index++]).then(img => {
       ctx.drawImage(img, boxPos.x, boxPos.y, boxPos.length, boxPos.length);
-        zip.file(
-          `${index}.png`,
-          canvas.toDataURL().replace("data:image/png;base64,", ""),
-          { base64: true }
-        );
+      zip.file(
+        `${index}.png`,
+        canvas.toDataURL().replace("data:image/png;base64,", ""),
+        { base64: true }
+      );
       if (index < qrContents.length) {
         process(index);
-      } else {
-        zip.generateAsync({ type: "blob" }).then((content) => {
-          document.querySelector("#processDescription").style.display = "none";
-          document.querySelector("#downloadZip").style.display = "inline-block";
-          document.querySelector("#restart").style.display = "inline-block";
-          document.querySelector("#downloadZip").addEventListener("click", () => {
-            saveAs(content, "images.zip");
-          });
-          document.querySelector("#restart").addEventListener("click", () => {
-            location.href = location.href;
-          });
-        });
+        return;
       }
+      zip.generateAsync({ type: "blob" }).then(content => {
+        document.querySelector("#processDescription").style.display = "none";
+        document.querySelector("#downloadZip").style.display = "inline-block";
+        document.querySelector("#restart").style.display = "inline-block";
+        document.querySelector("#downloadZip").addEventListener("click", () => {
+          saveAs(content, "images.zip");
+        });
+        document.querySelector("#restart").addEventListener("click", () => {
+          location.href = location.href;
+        });
+      });
     });
   }
 
