@@ -21,6 +21,17 @@ body {
   height: 100%;
 }
 
+textarea {
+  width: 80%;
+  height: 200px;
+}
+
+#confirmUrls {
+  display: block;
+  margin:  10px auto;
+  font-size: 20px;
+}
+
 .drawContainer {
   position: relative;
 }
@@ -40,4 +51,9 @@ body {
 
 #readyToBatch {
   font-size: 30px;
+}
+
+/* A hack to hide the close button from Canva button */
+.LFKmsQ {
+  display: none;
 }
