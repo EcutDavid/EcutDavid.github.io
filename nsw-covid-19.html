@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>COVID-19 in NSW</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,11 +10,15 @@
 <body>
   <h2></h2>
   <div id="map">
-    <p>The radius of circles is linearly correlated to count of cases. Close label below to stop the animation.</p>
-    <div id="dates"></div>
+    <p>The radius of circles is linearly correlated to the count of cases. Drag the slider below manually to stop the animation.</p>
+    <div id="dates">
+      <input type="range" id="slider"
+      min="0" max="100" value="90" step="10">
+      <p id="slideLabel"></p>
+    </div>
   </div>
 
   <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
-  <script type="text/javascript" src="./covid-assets-1.js"></script>
+  <script type="text/javascript" src="./covid-assets-2.js"></script>
 </body>
 </html>
