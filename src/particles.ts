@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 
+// Why we need filtered logging.
 const filterLogging = (undesiredPattern, code) => {
+  console.log("foo");
   const originalLog = console.log;
   console.log = function (...args) {
     return originalLog(...args && args.join(' ').match(undesiredPattern) ? [] : args);
@@ -169,7 +171,6 @@ function rebuildParticles() {
     planes = [];
   }
   drawText(namePoints, -visibleWidth / 2.6, visibleWidth / 2.6, visibleHeight / 2 - 50);
-  // setTimeout(() => drawText(posiPoints, -visibleWidth / 2.5, visibleWidth / 2.5, -5), 2500);
   onReset = false;
 }
 
