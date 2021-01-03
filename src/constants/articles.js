@@ -1,5 +1,10 @@
 export default [
   {
+    date: "Jan 2021",
+    url: "https://davidguandev.medium.com/2020-year-in-review-e68318ba1857",
+    name: "2020 Year in Review"
+  },
+  {
     date: "Jan 2020",
     url: "https://medium.com/@davidguandev/2019-year-in-review-d4580d38cd3a",
     name: "2019 Year in Review"
