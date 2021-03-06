@@ -12,7 +12,7 @@ export default class Footer extends Component {
           aria-label="David's linkedin profile"
           className='footer-link'
           target='_blank'
-          href='https://www.linkedin.com/in/david-guan-64b69b110'
+          href='https://www.linkedin.com/in/david-guan/'
         >
           <i className='fa fa-linkedin-square' />
         </a>
