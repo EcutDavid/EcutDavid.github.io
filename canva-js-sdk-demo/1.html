@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <style>
+      body {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 2.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <script src="https://sdk.canva.com/designbutton/v2/api.js"></script>
+    <script>
+      const DESIGN_TYPES = [
+        "BookCover", "Bookmark", "Card", "Certificate", "EmailHeader"
+      ];
+      const pTag = document.querySelector("p");
+      Canva.DesignButton.initialize({
+        apiKey: "18dxRFfjOIGvPQbq1TSGErFi",
+      }).then((api) => {
+        const roundCount = Math.floor(Math.random() * 10) + 4;
+        let counter = 0;
+
+        const timerId = setInterval(() => {
+          counter++;
+          const type = DESIGN_TYPES[counter % DESIGN_TYPES.length];
+          pTag.innerText = "Maybe creating a " + type;
+
+          if (counter !== roundCount) {
+            return;
+          }
+
+          clearInterval(timerId);
+          api.createDesign({
+            design: { type },
+            onDesignPublish: ({ exportUrl }) => { document.body.innerHTML = `<img src="${exportUrl}"/>`; }
+          });
+        }, 300);
+      });
+    </script>
+  </body>
+</html>
