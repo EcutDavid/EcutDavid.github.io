@@ -10,17 +10,8 @@
       }
 
       img {
-        max-width: 500px;
-      }
-
-      button {
-        font-size: 0.8em;
-      }
-
-      .imgButton {
-        border: none;
-        padding: 0;
         margin-top: 10px;
+        max-width: 500px;
       }
     </style>
   </head>
@@ -35,16 +26,12 @@
         apiKey: "18dxRFfjOIGvPQbq1TSGErFi",
       }).then((api) => {
         function onDesignPublish({ exportUrl, designId }) {
-          const button = document.createElement("button");
-          button.setAttribute("aria-label", "modify the iamge");
-          button.className = "imgButton";
           const img = document.createElement("img");
           img.src = exportUrl;
-          button.appendChild(img);
-          imageContainer.append(button);
+          imageContainer.append(img);
           imageContainer.append(document.createElement("br"));
 
-          button.addEventListener("click", () => {
+          img.addEventListener("click", () => {
             api.editDesign({
               design: { id: designId },
               onDesignPublish: ({ exportUrl }) => {
