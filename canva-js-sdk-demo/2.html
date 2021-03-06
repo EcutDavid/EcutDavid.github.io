@@ -31,6 +31,8 @@
           imageContainer.append(img);
           imageContainer.append(document.createElement("br"));
 
+          // Please wrap the image into a button and give the button aria-label
+          // for better accessibility.
           img.addEventListener("click", () => {
             api.editDesign({
               design: { id: designId },
