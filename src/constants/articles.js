@@ -1,5 +1,10 @@
 export default [
   {
+    date: "Mar 2021",
+    url: "https://davidguandev.medium.com/how-to-use-canva-javascript-sdk-to-integrate-canva-in-your-products-6c03d805a4c3",
+    name: "Integrate Canva in Your Products via the JS SDK (With Examples)"
+  },
+  {
     date: "Jan 2021",
     url: "https://davidguandev.medium.com/2020-year-in-review-e68318ba1857",
     name: "2020 Year in Review"
@@ -39,7 +44,7 @@ export default [
   },
   {
     date: "June 2018",
-    name: "Fixed a Bunch of Accessibility Issues for My Website(And How)",
+    name: "Fixed a Bunch of Accessibility Issues for My Website (And How)",
     url: "https://medium.com/p/bbaac48d314f"
   },
   {
@@ -49,7 +54,7 @@ export default [
   },
   {
     date: "May 2018",
-    name: "Participating Google Code Jam(the First Time)",
+    name: "Participating Google Code Jam (the First Time)",
     url: "https://medium.com/p/67bba2d6b7f0"
   },
   {
