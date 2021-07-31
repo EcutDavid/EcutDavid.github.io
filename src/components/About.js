@@ -4,7 +4,7 @@ import { ABOUT_ME } from 'constants/domID'
 import DESCRIPTION_LIST from 'constants/descriptionList'
 import Works from './Works'
 import Articles from './Articles'
-import 'styles/About.scss'
+import 'styles/About.css'
 
 
 export default class About extends Component {

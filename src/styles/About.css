@@ -1,0 +1,48 @@
+.About {
+  min-height: calc(100% - 350px - 400px);
+  width: 90%;
+  margin-left: 5%;
+}
+
+.About .account-container {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+
+.About .account-container i {
+    display: block;
+    font-size: 3.7em;
+}
+
+.About .title {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin: 30px 0 15px 0;
+  text-align: center;
+}
+
+.About .description-list {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-height: 160px;
+  text-align: center;
+}
+
+.About .description-list p {
+  font-size: 18px;
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.About .description-list .typing-cursor {
+  border-left: 1.5px solid #000;
+  opacity: 1;
+  transition: opacity 2s;
+  white-space: pre;
+}
+
+.About .description-list .typing-cursor.done {
+    opacity: 0;
+}

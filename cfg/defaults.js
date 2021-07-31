@@ -14,9 +14,6 @@ function getDefaultModules() {
         test: /\.css$/,
         loader: 'style-loader!css-loader!postcss-loader'
       }, {
-        test: /\.scss/,
-        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
-      }, {
         test: /\.(png|jpg|gif|woff|woff2|obj|ttf)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=8192'
       }, {

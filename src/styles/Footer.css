@@ -1,0 +1,62 @@
+.Footer {
+  background-color: #3f51b5;
+  min-height: 60px;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.Footer > a {
+  margin: 5px 0 20px;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  transition: color 0.5s;
+}
+
+.Footer > a:focus {
+  outline-color: white;
+}
+
+.Footer > a:hover {
+  color: skyblue;
+}
+
+.Footer > i {
+  display: block;
+}
+
+.Footer .mail {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+}
+
+.Footer .footer-link {
+  font-size: 3.5em;
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.Footer .snack-bar {
+  text-align: center;
+  padding: 10px 15px;
+  position: fixed;
+  bottom: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  left: calc(50% - 150px);
+  background: #323232;
+  color: #fff;
+  border-radius: 8px;
+  transition: opacity 1s;
+  display: none;
+  opacity: 0;
+}
+
+.Footer .snack-bar p {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}

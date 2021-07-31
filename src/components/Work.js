@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "styles/Work.scss";
+import "styles/Work.css";
 
 export default class Work extends Component {
   constructor() {

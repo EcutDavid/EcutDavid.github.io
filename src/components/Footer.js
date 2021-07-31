@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { CONTACT_ME } from 'constants/domID'
-import 'styles/Footer.scss'
+import 'styles/Footer.css'
 
 
 export default class Footer extends Component {

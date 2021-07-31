@@ -1,0 +1,7 @@
+.work {
+  min-height: 520px;
+}
+
+.work > div > p {
+  margin-bottom: 5px;
+}

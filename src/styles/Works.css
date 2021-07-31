@@ -1,0 +1,32 @@
+.work-container {
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .work-container > div:last-child:not(:first-child) {
+    float: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  .work-container > div:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+.work-container .img {
+  height: 300px;
+  width: 300px;
+}
+
+.work-container > div {
+  clear: none !important;
+}
+
+.work-container h5 {
+  cursor: default;
+  font-weight: bold;
+}
+
+.work-container .description {
+  margin-bottom: 10px;
+}

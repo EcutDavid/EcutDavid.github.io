@@ -2,35 +2,19 @@ import React, { Component } from "react";
 
 import data from "constants/articles";
 import { ARTICLES } from "constants/domID";
-import "styles/Articles.scss";
+import "styles/Articles.css";
 
 export default class Articles extends Component {
   constructor() {
-    super();
-    this.state = {
-      showActionButton: false,
-      showAll: true
-    };
-  }
-
-  toggleShowAll() {
-    const { showAll } = this.state;
-
-    this.setState({
-      showAll: !showAll
-    });
-    setTimeout(() => {
-      this.setState({ showActionButton: false });
-    }, 0);
+    super()
   }
 
   render() {
-    const { showAll, showActionButton } = this.state;
     return (
       <div id={ARTICLES} className="articles-container">
         <h2 className="title">Articles</h2>
         <div className="content">
-          {data.slice(0, showAll ? Number.MAX_VALUE : 5).map((d, i) => (
+          {data.map((d, i) => (
             <article
               className="flex-container"
               key={i}
@@ -49,15 +33,6 @@ export default class Articles extends Component {
             </article>
           ))}
         </div>
-        {showActionButton && (
-          <button
-            className={`button action-button ${showAll ? "hide-button" : ""}`}
-            disabled={showAll ? true : false}
-            onClick={() => this.toggleShowAll()}
-          >
-            Display more articles
-          </button>
-        )}
       </div>
     );
   }
