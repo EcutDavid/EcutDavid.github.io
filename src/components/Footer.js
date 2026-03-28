@@ -16,15 +16,7 @@ export default class Footer extends Component {
         >
           <i className='fa fa-linkedin-square' />
         </a>
-        <a
-          aria-label="David's twitter profile"
-          className='footer-link'
-          target='_blank'
-          href='https://twitter.com/davidguandev'
-        >
-          <i className='fa fa-twitter' />
-        </a>
-        <br />
+<br />
         <a
           aria-label="Send a email to David"
           className="mail"
