@@ -23,7 +23,7 @@ export default class Articles extends Component {
               <div className="small-11 small-centered medium-9 large-7">
                 <div className="article">
                   <h3>
-                    <a className="link" target="_blank" href={d.url}>
+                    <a className="link" target="_blank" rel="noopener noreferrer" href={d.url}>
                       {d.name}
                     </a>
                   </h3>

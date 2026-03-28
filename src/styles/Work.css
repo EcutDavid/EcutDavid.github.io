@@ -1,5 +1,6 @@
 .work {
   min-height: 520px;
+  padding: 20px 16px;
 }
 
 .work > div > p {

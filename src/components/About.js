@@ -109,44 +109,15 @@ export default class About extends Component {
               }
             </section>
           </div>
-          <div className="flex-container">
-            <a
-              aria-label="David's Github profile"
-              className='column small-6 medium-3 account-container'
-              target='_blank'
-              href='https://github.com/EcutDavid'
-            >
-              <i className='fa fa-github' />
-              Github
-            </a>
-            <a
-              aria-label="David's Stack overflow profile"
-              className='column small-6 medium-3 account-container'
-              target='_blank'
-              href='http://stackoverflow.com/users/5076405/david-guan'
-            >
-              <i className='fa fa-stack-overflow' />
-              Stack overflow
-            </a>
-            <a
-              aria-label="David's Medium homepage"
-              className='column small-6 medium-3 account-container'
-              target='_blank'
-              href='https://medium.com/@davidguandev'
-            >
-              <i className='fa fa-medium' />
-              Medium
-            </a>
-            <a
-              aria-label="David's Youtube channel"
-              className='column small-6 medium-3 account-container'
-              target='_blank'
-              href='https://www.youtube.com/channel/UCxSyYbODJF3ULNMoRwxjJbg'
-            >
-              <i className='fa fa-youtube' />
-              Youtube channel
-            </a>
-          </div>
+          <nav className="social-links" aria-label="Social links">
+            <a target='_blank' rel='noopener noreferrer' href='https://github.com/EcutDavid'>Github</a>
+            <span className="social-separator">/</span>
+            <a target='_blank' rel='noopener noreferrer' href='http://stackoverflow.com/users/5076405/david-guan'>Stack Overflow</a>
+            <span className="social-separator">/</span>
+            <a target='_blank' rel='noopener noreferrer' href='https://medium.com/@davidguandev'>Medium</a>
+            <span className="social-separator">/</span>
+            <a target='_blank' rel='noopener noreferrer' href='https://www.youtube.com/channel/UCxSyYbODJF3ULNMoRwxjJbg'>Youtube</a>
+          </nav>
           <Works />
           <Articles />
         </div>

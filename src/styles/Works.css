@@ -1,5 +1,6 @@
 .work-container {
   text-align: center;
+  gap: 24px;
 }
 
 @media screen and (min-width: 40em) {
@@ -22,11 +23,21 @@
   clear: none !important;
 }
 
-.work-container h5 {
+.work-container h3 {
   cursor: default;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #1e293b;
 }
 
 .work-container .description {
   margin-bottom: 10px;
+  font-size: 15px;
+  color: #475569;
+}
+
+.work-container .description p {
+  font-size: 15px;
+  color: #475569;
 }

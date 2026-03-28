@@ -8,10 +8,11 @@ h3,
 h4,
 h5 {
   cursor: default;
-  color: darkslategrey;
-  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  color: #1e293b;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1 {
@@ -23,49 +24,59 @@ h1 {
 body {
   background: #fff;
   margin: 0;
-  font-family: arial, helvetica, clean, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
   padding: 0.85em 1em;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 6px;
   font-size: 0.9rem;
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #2199e8;
-  color: #fefefe;
+  background-color: #2563eb;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
 }
 
 #app,
 .App {
   height: 100%;
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 a {
-  color: #1976d2;
+  color: #1d4ed8;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 a:hover {
-  color: #0d47a1;
+  color: #1e40af;
 }
 
 p {
   cursor: default;
   margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: #334155;
 }
 
 .button {
-  background-color: #1976d2;
+  background-color: #2563eb;
 }
 
 .button:hover {
-  background-color: #0d47a1;
+  background-color: #2563eb;
 }
 
 .flex-container {
@@ -146,7 +157,7 @@ p {
   .large-7 {
     width: 60%;
   }
-  large-4 {
+  .large-4 {
     width: 33%;
   }
 }
@@ -155,10 +166,16 @@ p {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 1rem;
-  border: 4px solid #fefefe;
-  border-radius: 0;
-  box-shadow: 0 0 0 1px hsla(0, 0%, 4%, 0.2);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
   line-height: 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.thumbnail:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
 }
 
 .Header {

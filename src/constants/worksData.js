@@ -21,6 +21,7 @@ export default [
         <a
           href="https://github.com/EcutDavid/coding-contests-subscriber"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="The github repo of Coding Contests Subscriber"
         >
           Github repo
@@ -41,6 +42,7 @@ export default [
         <a
           href="https://github.com/EcutDavid/photo-filter"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="The github repo of Photo Filter"
         >
           Github repo
@@ -58,6 +60,7 @@ export default [
         <a
           href="https://davidguan.itch.io/space-invaders"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Play this space invaders copy on Itch.io"
         >
           Play on Itch.io
@@ -66,6 +69,7 @@ export default [
         <a
           href="https://github.com/EcutDavid/space-invaders"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="The github repo of this space invaders copy"
         >
           Github repo
@@ -86,6 +90,7 @@ export default [
         <a
           href="https://github.com/EcutDavid/splunk-ucc-config-validator"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="The github repo of Splunk UCC configuration validator"
         >
           Github repo
@@ -106,6 +111,7 @@ export default [
         <a
           href="https://github.com/EcutDavid/webgl-workshop"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="The github repo of webgl-workshop.com"
         >
           Github repo

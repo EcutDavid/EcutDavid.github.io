@@ -6,7 +6,6 @@ import renderParticles from './particles';
 import App from './components/Main'
 
 import 'normalize.css/normalize.css'
-import 'font-awesome/css/font-awesome.min.css'
 import 'styles/App.css'
 
 // Render the main component into the dom

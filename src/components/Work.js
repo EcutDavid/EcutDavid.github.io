@@ -33,7 +33,7 @@ export default class Work extends Component {
             scrolling="no"
           />
         )}
-        <h3 aria-label={`Project ${title}`}>{title}</h3>
+        <h3>{title}</h3>
         <div className="description">{description}</div>
       </section>
     );
