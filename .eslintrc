@@ -1,7 +1,7 @@
 {
   "plugins": ["react"],
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -9,15 +9,12 @@
   },
   "env": {
     "browser": true,
-    "amd": true,
     "es6": true,
-    "node": true,
-    "mocha": true
+    "node": true
   },
   "rules": {
     "comma-dangle": 1,
     "no-undef": 1,
-    "global-strict": 0,
     "no-extra-semi": 1,
     "no-underscore-dangle": 0,
     "no-console": 1,

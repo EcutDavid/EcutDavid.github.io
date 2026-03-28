@@ -21,7 +21,12 @@ const isMobile = mobilecheck();
 const maxSpeed = 14;
 const planeMaterial = new THREE.MeshStandardMaterial({ color: 0x2199e8, side: THREE.DoubleSide });
 const planeGeometry = new THREE.PlaneGeometry(1.3, 1.3);
-planeGeometry.faces.pop();
+// Remove the second triangle face to make it a single triangle
+// (Old three.js used planeGeometry.faces.pop(); modern three.js uses BufferGeometry index)
+const idx = planeGeometry.getIndex();
+if (idx) {
+  planeGeometry.setIndex(Array.from(idx.array.slice(0, 3) as unknown as number[]));
+}
 class Plane {
   private speedX = 0;
   private speedY = 0;
@@ -157,6 +162,8 @@ function rebuildParticles() {
   renderWidth = getRendererWidth();
   renderHeight = (document.querySelector(targetSelector) as HTMLElement).offsetHeight;
   renderer.setSize(renderWidth, renderHeight);
+  // Modern three.js sets canvas display:block; center it within the header
+  renderer.domElement.style.margin = '0 auto';
   camera.aspect = renderWidth / renderHeight;
   camera.updateProjectionMatrix();
 

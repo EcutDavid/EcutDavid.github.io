@@ -1,7 +1,7 @@
-import 'core-js/fn/object/assign'
+import 'core-js/actual/object/assign'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import renderParticles from './particles.ts';
+import renderParticles from './particles';
 
 import App from './components/Main'
 
