@@ -71,14 +71,6 @@ p {
   color: #334155;
 }
 
-.button {
-  background-color: #2563eb;
-}
-
-.button:hover {
-  background-color: #2563eb;
-}
-
 .flex-container {
   display: flex;
   justify-content: center;

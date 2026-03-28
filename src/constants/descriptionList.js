@@ -10,7 +10,7 @@ export default [
           start: CURRENT_POSITION.indexOf("Canva"),
           end: CURRENT_POSITION.indexOf("Canva") + "Canva".length,
           attributes:
-            'href="https://www.canva.com/" target="_blank" aria-label="canva, a company that provides graphic-design tools."'
+            'href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" aria-label="canva, a company that provides graphic-design tools."'
         }
       ]
     }

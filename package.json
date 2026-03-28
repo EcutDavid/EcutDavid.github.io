@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "core-js": "^3.36.0",
-    "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
