@@ -9,6 +9,7 @@ import invaders from "../assets/invaders.png";
 export default [
   {
     title: "Coding Contests Subscriber",
+    date: "Apr 2019",
     pictureAlt: "Project Coding Contests Subscriber screen capture",
     picture: contestsSub,
     description: (
@@ -31,6 +32,7 @@ export default [
   },
   {
     title: "Photo Filter",
+    date: "Aug 2017",
     pictureAlt: "Project Photo Filter screen capture",
     picture: photoFilter,
     description: (
@@ -52,6 +54,7 @@ export default [
   },
   {
     title: "Space Invaders",
+    date: "Oct 2017",
     pictureAlt: "Project Space Invaders screen capture",
     picture: invaders,
     description: (
@@ -79,6 +82,7 @@ export default [
   },
   {
     title: "Splunk UCC configuration validator",
+    date: "Mar 2017",
     pictureAlt: "Project Splunk UCC configuration validator screen capture",
     picture: uccValidator,
     description: (
@@ -100,6 +104,7 @@ export default [
   },
   {
     title: "webgl-workshop.com",
+    date: "Jun 2017",
     pictureAlt: "Project webgl-workshop.com screen capture",
     picture: webglWrokshop,
     description: (

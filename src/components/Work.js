@@ -9,6 +9,7 @@ export default class Work extends Component {
   render() {
     const {
       title,
+      date,
       picture,
       description,
       className,
@@ -34,6 +35,7 @@ export default class Work extends Component {
           />
         )}
         <h3>{title}</h3>
+        {date && <span className="work-date">{date}</span>}
         <div className="description">{description}</div>
       </section>
     );
