@@ -27,10 +27,6 @@ export default class Footer extends Component {
             davidguandev@gmail.com
           </a>
         </div>
-        <div className="snack-bar">
-          <p>All the assets cached locally.</p>
-          <p>Ready for offline situations!</p>
-        </div>
       </footer>
     )
   }

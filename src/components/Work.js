@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "styles/Work.css";
 
 export default class Work extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const {
       title,
@@ -14,7 +10,6 @@ export default class Work extends Component {
       description,
       className,
       index,
-      isIframe,
       pictureAlt
     } = this.props;
 
@@ -24,16 +19,7 @@ export default class Work extends Component {
         className={className}
         style={index === 5 ? { float: "right" } : {}}
       >
-        {!isIframe ? (
-          <img className="img thumbnail" src={picture} alt={pictureAlt} />
-        ) : (
-          <iframe
-            className="img thumbnail"
-            width="300"
-            height="300"
-            scrolling="no"
-          />
-        )}
+        <img className="img thumbnail" src={picture} alt={pictureAlt} />
         <h3>{title}</h3>
         {date && <span className="work-date">{date}</span>}
         <div className="description">{description}</div>

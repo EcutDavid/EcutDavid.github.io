@@ -68,7 +68,7 @@ export default [
         >
           Play on Itch.io
         </a>
-        <p>-----------</p>
+        <hr />
         <a
           href="https://github.com/EcutDavid/space-invaders"
           target="_blank"
