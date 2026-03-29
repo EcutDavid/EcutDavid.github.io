@@ -17,6 +17,10 @@
   font-size: 16px;
   text-decoration: none;
   transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 4px;
 }
 
 .Footer .footer-link:hover {
@@ -27,26 +31,4 @@
   color: #64748b;
   font-size: 16px;
   user-select: none;
-}
-
-.Footer .snack-bar {
-  text-align: center;
-  padding: 10px 15px;
-  position: fixed;
-  bottom: 20px;
-  width: 300px;
-  box-sizing: border-box;
-  left: calc(50% - 150px);
-  background: #323232;
-  color: #fff;
-  border-radius: 8px;
-  transition: opacity 1s;
-  display: none;
-  opacity: 0;
-}
-
-.Footer .snack-bar p {
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: bold;
 }

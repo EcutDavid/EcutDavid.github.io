@@ -64,6 +64,12 @@ a:hover {
   color: #1e40af;
 }
 
+a:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 p {
   cursor: default;
   margin-bottom: 15px;

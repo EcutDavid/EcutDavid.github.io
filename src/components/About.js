@@ -52,7 +52,7 @@ export default class About extends Component {
           <nav className="social-links" aria-label="Social links">
             <a target='_blank' rel='noopener noreferrer' href='https://github.com/EcutDavid'>Github</a>
             <span className="social-separator">/</span>
-            <a target='_blank' rel='noopener noreferrer' href='http://stackoverflow.com/users/5076405/david-guan'>Stack Overflow</a>
+            <a target='_blank' rel='noopener noreferrer' href='https://stackoverflow.com/users/5076405/david-guan'>Stack Overflow</a>
             <span className="social-separator">/</span>
             <a target='_blank' rel='noopener noreferrer' href='https://medium.com/@davidguandev'>Medium</a>
             <span className="social-separator">/</span>

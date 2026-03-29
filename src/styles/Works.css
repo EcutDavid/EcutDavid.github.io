@@ -41,3 +41,9 @@
   font-size: 15px;
   color: #475569;
 }
+
+.work-container .description a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}

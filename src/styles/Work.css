@@ -6,3 +6,10 @@
 .work > div > p {
   margin-bottom: 5px;
 }
+
+.work .work-date {
+  display: block;
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 8px;
+}

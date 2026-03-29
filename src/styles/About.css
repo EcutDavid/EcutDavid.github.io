@@ -15,6 +15,13 @@
   font-size: 16px;
 }
 
+.About .social-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 4px;
+}
+
 .About .social-separator {
   color: #64748b;
   user-select: none;
@@ -42,15 +49,4 @@
   display: inline-block;
   white-space: pre-wrap;
   color: #334155;
-}
-
-.About .description-list .typing-cursor {
-  border-left: 1.5px solid #334155;
-  opacity: 1;
-  transition: opacity 2s;
-  white-space: pre;
-}
-
-.About .description-list .typing-cursor.done {
-  opacity: 0;
 }
