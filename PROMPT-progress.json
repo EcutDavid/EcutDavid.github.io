@@ -1,8 +1,8 @@
 {
-  "last_iteration": 1,
+  "last_iteration": 2,
   "tasks": {
     "setup-jest-rtl": { "status": "done", "notes": "" },
-    "hamburger-nav": { "status": "pending", "notes": "" },
+    "hamburger-nav": { "status": "done", "notes": "" },
     "responsive-project-images": { "status": "pending", "notes": "" },
     "stack-article-dates": { "status": "pending", "notes": "" }
   }
