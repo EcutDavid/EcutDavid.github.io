@@ -181,5 +181,10 @@ p {
   height: 400px;
   position: relative;
   text-align: center;
-  margin-top: 56px;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    margin-top: 56px;
+  }
 }
