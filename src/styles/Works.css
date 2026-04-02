@@ -19,6 +19,26 @@
   width: 300px;
 }
 
+@media screen and (max-width: 640px) {
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-container .img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .work-container .img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .work-container > div {
   clear: none !important;
 }

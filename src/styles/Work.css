@@ -3,6 +3,12 @@
   padding: 20px 16px;
 }
 
+@media screen and (max-width: 640px) {
+  .work {
+    min-height: auto;
+  }
+}
+
 .work > div > p {
   margin-bottom: 5px;
 }
