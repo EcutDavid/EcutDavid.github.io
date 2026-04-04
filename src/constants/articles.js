@@ -5,16 +5,6 @@ export default [
     name: "Integrate Canva in Your Products via the JS SDK (With Examples)"
   },
   {
-    date: "Jan 2021",
-    url: "https://davidguandev.medium.com/2020-year-in-review-e68318ba1857",
-    name: "2020 Year in Review"
-  },
-  {
-    date: "Jan 2020",
-    url: "https://medium.com/@davidguandev/2019-year-in-review-d4580d38cd3a",
-    name: "2019 Year in Review"
-  },
-  {
     date: "Oct 2019",
     url:
       "https://medium.com/@davidguandev/build-a-voice-notes-app-part-2-user-system-5aa58594469e",
@@ -31,11 +21,6 @@ export default [
     url:
       "https://medium.com/@davidguandev/reversing-string-that-contains-emojis-in-javascript-and-c-2d2979d28e26",
     name: "Reversing String That Contains Emojis in Javascript and C++"
-  },
-  {
-    date: "Jan 2019",
-    url: "https://medium.com/p/8f2c498fcc7e",
-    name: "2018 Year in Review"
   },
   {
     date: "Dec 2018",
