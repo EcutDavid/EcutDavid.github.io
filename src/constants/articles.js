@@ -1,5 +1,10 @@
 export default [
   {
+    date: "Apr 2026",
+    url: "https://davidguandev.medium.com/from-skeptic-to-let-it-run-overnight-one-year-of-work-with-ai-7f85527d7975",
+    name: "From Skeptic to \"Let It Run Overnight\" — One Year of Work with AI"
+  },
+  {
     date: "Mar 2021",
     url: "https://davidguandev.medium.com/how-to-use-canva-javascript-sdk-to-integrate-canva-in-your-products-6c03d805a4c3",
     name: "Integrate Canva in Your Products via the JS SDK (With Examples)"
