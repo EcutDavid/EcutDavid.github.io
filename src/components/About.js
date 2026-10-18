@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 import { ABOUT_ME } from 'constants/domID'
 import DESCRIPTION_LIST from 'constants/descriptionList'
-import Works from './Works'
 import Articles from './Articles'
+import Works from './Works'
 import 'styles/About.css'
 
 
@@ -49,17 +49,8 @@ export default class About extends Component {
               }
             </section>
           </div>
-          <nav className="social-links" aria-label="Social links">
-            <a target='_blank' rel='noopener noreferrer' href='https://github.com/EcutDavid'>Github</a>
-            <span className="social-separator">/</span>
-            <a target='_blank' rel='noopener noreferrer' href='https://stackoverflow.com/users/5076405/david-guan'>Stack Overflow</a>
-            <span className="social-separator">/</span>
-            <a target='_blank' rel='noopener noreferrer' href='https://medium.com/@davidguandev'>Medium</a>
-            <span className="social-separator">/</span>
-            <a target='_blank' rel='noopener noreferrer' href='https://www.youtube.com/channel/UCxSyYbODJF3ULNMoRwxjJbg'>Youtube</a>
-          </nav>
-          <Works />
           <Articles />
+          <Works />
         </div>
       </main>
     )

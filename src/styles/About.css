@@ -5,28 +5,6 @@
   margin: 0 auto;
 }
 
-.About .social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 8px 0 16px;
-  font-size: 16px;
-}
-
-.About .social-links a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 8px 4px;
-}
-
-.About .social-separator {
-  color: #64748b;
-  user-select: none;
-}
-
 .About .title {
   font-size: 1.5rem;
   font-weight: 600;

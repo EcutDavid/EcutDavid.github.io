@@ -18,13 +18,6 @@ describe('About', () => {
     });
   });
 
-  it('renders social links', () => {
-    expect(screen.getByText('Github')).toHaveAttribute('href', 'https://github.com/EcutDavid');
-    expect(screen.getByText('Stack Overflow')).toHaveAttribute('href', 'https://stackoverflow.com/users/5076405/david-guan');
-    expect(screen.getByText('Medium')).toHaveAttribute('href', 'https://medium.com/@davidguandev');
-    expect(screen.getByText('Youtube')).toHaveAttribute('href', 'https://www.youtube.com/channel/UCxSyYbODJF3ULNMoRwxjJbg');
-  });
-
   it('renders Works and Articles sections', () => {
     expect(screen.getByText('Projects')).toBeInTheDocument();
     expect(screen.getByText('Articles')).toBeInTheDocument();

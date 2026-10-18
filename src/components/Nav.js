@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import { ABOUT_ME, MY_WORKS, ARTICLES, CONTACT_ME } from 'constants/domID'
+import { ABOUT_ME, ARTICLES, MY_WORKS, CONTACT_ME } from 'constants/domID'
 import 'styles/Nav.css'
 
 const NAV_LINKS = [
   { label: 'About', id: ABOUT_ME },
-  { label: 'Projects', id: MY_WORKS },
   { label: 'Articles', id: ARTICLES },
+  { label: 'Projects', id: MY_WORKS },
   { label: 'Contact', id: CONTACT_ME }
 ]
 
