@@ -10,7 +10,7 @@ describe('Nav', () => {
 
   it('renders all 4 navigation links', () => {
     expect(screen.getAllByText('About')).toHaveLength(1);
-    expect(screen.getAllByText('Projects')).toHaveLength(1);
+    expect(screen.getAllByText('Side Projects')).toHaveLength(1);
     expect(screen.getAllByText('Articles')).toHaveLength(1);
     expect(screen.getAllByText('Contact')).toHaveLength(1);
   });
@@ -37,7 +37,7 @@ describe('Nav', () => {
     fireEvent.click(hamburger);
     // Desktop links + mobile menu links = 2 of each
     expect(screen.getAllByText('About')).toHaveLength(2);
-    expect(screen.getAllByText('Projects')).toHaveLength(2);
+    expect(screen.getAllByText('Side Projects')).toHaveLength(2);
   });
 
   it('closes menu when a mobile link is clicked', () => {

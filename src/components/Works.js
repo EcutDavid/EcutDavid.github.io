@@ -13,7 +13,7 @@ export default class Works extends Component {
   render() {
     return (
       <div id={MY_WORKS}>
-        <h2 className='title'>Projects</h2>
+        <h2 className='title'>Side Projects</h2>
         <div className='flex-container work-container'>
           {
             data.map((d, k) =>

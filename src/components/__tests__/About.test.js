@@ -11,7 +11,9 @@ describe('About', () => {
 
   it('renders bio text from descriptionList', () => {
     // First item has inline HTML tags so text is split across elements
-    expect(screen.getByText(/Engineer at/)).toBeInTheDocument();
+    expect(screen.getByRole('region', { name: 'introduction' })).toHaveTextContent(
+      'Hey, I’m Wenxiang (David) Guan, a software engineer at Canva.'
+    );
     // Remaining items render as plain text
     DESCRIPTION_LIST.slice(1).forEach(({ text }) => {
       expect(screen.getByText(text)).toBeInTheDocument();
@@ -19,7 +21,7 @@ describe('About', () => {
   });
 
   it('renders Works and Articles sections', () => {
-    expect(screen.getByText('Projects')).toBeInTheDocument();
+    expect(screen.getByText('Side Projects')).toBeInTheDocument();
     expect(screen.getByText('Articles')).toBeInTheDocument();
   });
 });

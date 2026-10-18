@@ -6,7 +6,7 @@ import 'styles/Nav.css'
 const NAV_LINKS = [
   { label: 'About', id: ABOUT_ME },
   { label: 'Articles', id: ARTICLES },
-  { label: 'Projects', id: MY_WORKS },
+  { label: 'Side Projects', id: MY_WORKS },
   { label: 'Contact', id: CONTACT_ME }
 ]
 

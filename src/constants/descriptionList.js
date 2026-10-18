@@ -1,4 +1,4 @@
-const CURRENT_POSITION = 'Engineer at Canva.';
+const CURRENT_POSITION = 'Hey, I’m Wenxiang (David) Guan, a software engineer at Canva.';
 
 export default [
   {
