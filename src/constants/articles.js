@@ -1,5 +1,10 @@
 export default [
   {
+    date: "Oct 2026",
+    url: "https://davidguandev.medium.com/pi-agent-harnesses-gave-me-tons-of-hope-6fddc8ad617a",
+    name: "Pi Agent Harnesses Gave Me Tons of Hope"
+  },
+  {
     date: "Apr 2026",
     url: "https://davidguandev.medium.com/from-skeptic-to-let-it-run-overnight-one-year-of-work-with-ai-7f85527d7975",
     name: "From Skeptic to \"Let It Run Overnight\" — One Year of Work with AI"
@@ -22,25 +27,9 @@ export default [
     name: "Build a Voice Notes App — Part 1, Text to Speech Pipeline"
   },
   {
-    date: "Apr 2019",
-    url:
-      "https://medium.com/@davidguandev/reversing-string-that-contains-emojis-in-javascript-and-c-2d2979d28e26",
-    name: "Reversing String That Contains Emojis in Javascript and C++"
-  },
-  {
     date: "Dec 2018",
     url: "https://medium.com/p/1ef024e85c22",
     name: "AOC 2018 Day 20: A Regular Map"
-  },
-  {
-    date: "June 2018",
-    name: "Fixed a Bunch of Accessibility Issues for My Website (And How)",
-    url: "https://medium.com/p/bbaac48d314f"
-  },
-  {
-    date: "June 2018",
-    name: "A Bash Script That Saves Me from git -m “I forgot git add”",
-    url: "https://medium.com/p/434b8af95311"
   },
   {
     date: "May 2018",
@@ -51,11 +40,6 @@ export default [
     date: "May 2018",
     name: "Introduction to Dynamic Programming with Examples",
     url: "https://medium.com/p/bc04dca3ccee"
-  },
-  {
-    date: "Jan 2018",
-    name: "Haskell Study Note 01, Sorting",
-    url: "https://medium.com/p/46b49648e084"
   },
   {
     date: "Nov 2017",
@@ -91,10 +75,5 @@ export default [
     date: "Jul 2016",
     name: "Build a Tic Tac Toe with React Native",
     url: "https://medium.com/p/2a3c44e697f2"
-  },
-  {
-    date: "Jul 2016",
-    name: "Let’s build a React Native application",
-    url: "https://medium.com/p/4190839a4f5c"
   }
 ];
